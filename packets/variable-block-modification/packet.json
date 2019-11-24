@@ -34,6 +34,31 @@
       "hideFromInstanceActionsMenu": false,
       "hideFromBottomMenu": false,
       "menuPath": ""
+    },
+    {
+      "filename": "run-grant-example.sh",
+      "includeName": "",
+      "menuCaption": "Run grant example",
+      "directory": "",
+      "runsIndependent": false,
+      "runsParallel": false,
+      "runBeforeIndependentActions": false,
+      "parseWithVelocity": false,
+      "executable": true,
+      "saveWith": "CURRENT INSTANCE",
+      "isInteractive": false,
+      "hideRunnerWindow": false,
+      "installPipeline": 0,
+      "deploymentPipeline": 0,
+      "removePipeline": 0,
+      "importPipeline": 0,
+      "timeoutSeconds": 3600,
+      "key": "",
+      "menuOrder": 100,
+      "menuSeparatorBefore": false,
+      "hideFromInstanceActionsMenu": false,
+      "hideFromBottomMenu": false,
+      "menuPath": ""
     }
   ],
   "allowedChildren": []
