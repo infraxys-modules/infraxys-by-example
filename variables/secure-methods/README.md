@@ -7,10 +7,12 @@ Variables can be created at the project, environment and container level. This m
 This example shows 2 ways on how to protect the execution of a method in Bash. The same procedure can be used for any other language.
 
 
+Using grants is not available for Infraxys Developer.
+
 
 ## Prerequisites
 
-See the prerequisites-section of [here](../../README.md)
+See the prerequisites-section [here](../../README.md)
 
 
 ## 1. Create the variable
@@ -73,7 +75,7 @@ The path shouldn't contain variables because they could be overwritten.
 - Click save.
 - Click "Generate scripts".
 - Right-click on the new packet and execute the action:
-![execute](resources/execute-action.png "Execute action")
+![execute](resources/execute-action.png "Execute action")  
 The result will look like the following:
 ![failed](resources/execute-failed.png "Execute failed")
 

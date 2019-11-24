@@ -10,8 +10,6 @@ See [this page](./prerequisites.md).
 
 ### Variables
 
-See [Concepts - Variable](https://infraxys.io/concepts/resource-types/user/) for more information.
-
 - [Securing methods using variables](variables/secure-methods/README.md)
 
 
