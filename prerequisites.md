@@ -1,6 +1,6 @@
 # Prerequisites
 
-You have an <a href="https://github.com/infraxys-core/infraxys-developer" target="_blank">Infraxys Developer Edition</a> running.
+You have an <a target="_blank" href="https://github.com/infraxys-core/infraxys-developer">Infraxys Developer Edition</a> running.
 The examples assume that you will follow them step-by-step. If this is the case, then a GitHub-repository should be created as well.
 
 ## Setup your environment
