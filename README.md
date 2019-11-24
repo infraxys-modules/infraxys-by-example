@@ -1,6 +1,6 @@
 # Infraxys By Example
 
-This repository will be used to provide examples on how to use Infraxys.
+This repository provides examples for using Infraxys.
 
 ## Prerequisites
 
