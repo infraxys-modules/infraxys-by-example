@@ -14,7 +14,7 @@ The examples assume that the following configuration is already in place.
 
 ## GitHub module repository setup
 
-See <a href="https://infraxys.io/topics/modules/" target="_blank">Infraxys modules</a> on how to setup your module repository.
+See <a href="https://infraxys.io/topics/using-modules/" target="_blank">Infraxys modules</a> on how to setup your module repository.
 
 ## Setup this infraxys-by-example module (optional)
 
