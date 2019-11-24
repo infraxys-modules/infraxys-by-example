@@ -1,6 +1,6 @@
 # Prerequisites
 
-You have an Infraxys Developer Edition running.
+You have an <a target="_blank" href="https://github.com/infraxys-core/infraxys-developer">Infraxys Developer Edition</a> running.
 The examples assume that you will follow them step-by-step. If this is the case, then a GitHub-repository should be created as well.
 
 ## Setup your environment
@@ -14,7 +14,7 @@ The examples assume that the following configuration is already in place.
 
 ## GitHub module repository setup
 
-See <a href="https://infraxys.io/topics/modules/" target="_blank">Infraxys modules</a> on how to setup your module repository.
+See <a href="https://infraxys.io/topics/using-modules/" target="_blank">Infraxys modules</a> on how to setup your module repository.
 
 ## Setup this infraxys-by-example module (optional)
 

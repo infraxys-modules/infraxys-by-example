@@ -4,11 +4,15 @@ See <a href="https://infraxys.io/concepts/resource-types/variable/" target="_bla
 
 Variables can be created at the project, environment and container level. This means that blocking a function can be managed at a higher project then the root-project of a user.
 
-This example shows how to block the execution of a method in Bash, but the same procedure can be used for any other language.
+This example shows 2 ways on how to protect the execution of a method in Bash. The same procedure can be used for any other language.
+
+
+Using grants is not available for Infraxys Developer.
+
 
 ## Prerequisites
 
-See the prerequisites-section of [here](../../README.md)
+See the prerequisites-section [here](../../README.md)
 
 
 ## 1. Create the variable
@@ -34,6 +38,8 @@ Set the following values:
 - Specify the following details and save the packet.
 ![packet](resources/packet-form.png "Add packet")
 
+
+### Block a method for everyone
 - Click the "Files"-tab and add a file through the context-menu for the space below the tab. Make sure "Executable" is selected.
 
 ![script](resources/script.png "Script")
@@ -69,5 +75,55 @@ The path shouldn't contain variables because they could be overwritten.
 - Click save.
 - Click "Generate scripts".
 - Right-click on the new packet and execute the action:
-![execute](resources/execute-action.png "Execute action")
+![execute](resources/execute-action.png "Execute action")  
+The result will look like the following:
+![failed](resources/execute-failed.png "Execute failed")
+
  
+### Only allow method invocation for users with specific grants
+
+This method is not available in Infraxys Developer since no users and profiles can be managed.
+
+Here we'll create an action that will fail if the user doesn't have custom grant "i-can-execute-it".  
+
+We'll use Bash function "check_grant" for this. It's provided by the infraxys-core module. 
+check_grant is a convenience method that exits the action if the current user doesn't have the specified grant. It executes readonly script /tmp/infraxys/system/has_grant which can be invoked from other languages as well.
+
+#### Create the custom grant "i-can-execute-it"
+
+- Open a project that contains an account to test this setup.
+- Open the "Profiles"-tab.
+- Click "Create profile" in the context-menu.
+- Save and close the profile.
+- Open the "Custom grants"-tab.
+- Click "Create grant" in the context-menu.
+- Call it "i-can-execute-it" and click "Save".
+- Drag above profile to the right column "Profiles with this grant". Users that have this profile now have this grant.
+
+#### Create another action
+
+- Open the packet "variable-block-modification" and add a second executable file.
+![run-grant-example](resources/run-grant-example.sh.png "Run grant example")
+
+```bash
+#!/usr/bin/env bash
+
+set -euo pipefail;
+
+function test_grant() {
+	log_info "Checking if it's ok to run test_grant.";
+	check_grant --grant_name "i-can-execute-it";
+	log_info "'check_grant' didn't exit, so modification is OK";
+}
+
+test_grant;
+```
+
+- Open the instances-tab on the container with this "variable-block-modification"-packet.
+- Generate scripts so that they are available on the provisioning server for this environment.
+- Execute action "Run grant example" on the "Block modification example"-instance.
+- If you don't have grant "i-can-execute-it" assigned through a profile, then the action will exit:
+![failed](resources/check-grant-failed.png "Check grant failed")
+- Otherwise, you'll get:
+![succeeded](resources/check-grant-succeeded.png "Check grant succeeded")
+
