@@ -122,4 +122,6 @@ test_grant;
 - Execute action "Run grant example" on the "Block modification example"-instance.
 - If you don't have grant "i-can-execute-it" assigned through a profile, then the action will exit:
 ![failed](resources/check-grant-failed.png "Check grant failed")
+- Otherwise, you'll get:
+![succeeded](resources/check-grant-succeeded.png "Check grant succeeded")
 
