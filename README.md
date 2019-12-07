@@ -12,4 +12,7 @@ See [this page](./prerequisites.md).
 
 - [Securing methods using variables](variables/secure-methods/README.md)
 
+### Attributes
+
+- [Dynamic lists](attributes/dynamic-lists/README.md)
 

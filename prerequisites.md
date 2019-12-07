@@ -5,7 +5,7 @@ The examples assume that you will follow them step-by-step. If this is the case,
 
 ## Setup your environment
 
-The examples assume that the following configuration is already in place.
+Most examples assume that the following configuration is already in place.
 
 ## Infraxys container setup
 - Create project "infraxys-by-example" underneath a project of your choice.
