@@ -1,0 +1,20 @@
+{
+  "name": "infraxys-by-example-module-env",
+  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys-by-example-module-env",
+  "workflows": [
+    {
+      "name": "Demo REST call",
+      "guid": "1a3677e7-1713-4773-aa8a-ff0c6db1c57b",
+      "confirmationMessage": "",
+      "steps": [
+        {
+          "name": "REST Python 1",
+          "location": 1,
+          "instanceGuid": "bffca934-d0fb-4ff8-95a0-4a5c9dfa4c0a",
+          "containerGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys-by-example-module-env\\module-container",
+          "filename": "rest_python1.py"
+        }
+      ]
+    }
+  ]
+}
