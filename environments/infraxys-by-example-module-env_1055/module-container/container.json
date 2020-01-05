@@ -5,6 +5,16 @@
   "group": "",
   "instances": [
     {
+      "guid": "bffca934-d0fb-4ff8-95a0-4a5c9dfa4c0a",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys rest calls",
+      "velocityName": "",
+      "instanceGroups": "",
+      "instance_label": "Infraxys REST example",
+      "json": "{}",
+      "request_method": "GET",
+      "request_path": "environments/execute"
+    },
+    {
       "guid": "1063a6ab-6c22-4df0-9a44-ecdbe375c9a7",
       "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\dynamic-list-attributes",
       "velocityName": "",
