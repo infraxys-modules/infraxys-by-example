@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "description": "Container under a module-environment",
+  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys-by-example-module-env\\module-container",
+  "group": "",
+  "instances": [
+    {
+      "guid": "1063a6ab-6c22-4df0-9a44-ecdbe375c9a7",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\dynamic-list-attributes",
+      "velocityName": "",
+      "instanceGroups": "",
+      "docker_attribute": "eu-west-3",
+      "ec2_regions": "eu-west-2"
+    }
+  ]
+}
