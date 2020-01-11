@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "description": "container 1",
+  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys-by-example-module-env\\cont-1",
+  "group": "",
+  "instances": [
+    {
+      "guid": "8ebf5108-9bf8-4cef-adfd-38e6f9fd4ae3",
+      "packetGuid": "github.com\\infraxys-modules\\aws-sqs\\master\\sqs queue",
+      "velocityName": "",
+      "instanceGroups": "",
+      "content_based_deduplication": "0",
+      "delay_seconds": "0",
+      "fifo_queue": "0",
+      "kms_data_key_reuse_period_seconds": "300",
+      "kms_master_key_id": "",
+      "max_message_size": "262144",
+      "message_retention_seconds": "345600",
+      "queue_name": "cont-1-queeue",
+      "queue_policy": "",
+      "receive_wait_time_seconds": "0",
+      "redrive_policy": "",
+      "tags": "    Name        \u003d \"$instance.getAttribute(\"queue_name\")\",\n    Tenant       \u003d \"techops tooling\",\n    Remarks    \u003d \"Test jma\"",
+      "visibility_timeout_seconds": "30"
+    }
+  ]
+}
