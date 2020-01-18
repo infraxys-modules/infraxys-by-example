@@ -40,7 +40,7 @@ Set the following values:
 
 
 ### Block a method for everyone
-- Click the "Files"-tab and add a file through the context-menu for the space below the tab. Make sure "Executable" is selected.
+- Click the "Files"-tab and add a file through the context-menu. Make sure "Executable" is selected.
 
 ![script](resources/script.png "Script")
 ```bash
