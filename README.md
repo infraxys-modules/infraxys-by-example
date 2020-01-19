@@ -16,3 +16,6 @@ See [this page](./prerequisites.md).
 
 - [Dynamic lists](attributes/dynamic-lists/README.md)
 
+### Environments
+
+- [AWS VPC](modules/environments/VPC/README.md)

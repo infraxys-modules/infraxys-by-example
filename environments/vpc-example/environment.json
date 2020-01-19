@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "name": "vpc-example",
+  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\vpc-example",
+  "workflows": [
+    {
+      "name": "Create AWS resources",
+      "guid": "13601eab-7433-4008-ab46-2d99bee99c62",
+      "confirmationMessage": "",
+      "steps": [
+        {
+          "name": "Terraform plan, confirm and apply",
+          "location": 1,
+          "instanceGuid": "guid-46433",
+          "containerGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\vpc-example\\vpc-example",
+          "filename": "terraform_plan_confirm_apply.sh"
+        },
+        {
+          "name": "Terraform plan, confirm and apply",
+          "location": 2,
+          "instanceGuid": "guid-46420",
+          "containerGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\vpc-example\\vpc-example",
+          "filename": "terraform_plan_confirm_apply.sh"
+        }
+      ]
+    },
+    {
+      "name": "Destroy AWS resources",
+      "guid": "d2c8d806-c2a0-4c55-852e-cd23ecfbe08f",
+      "confirmationMessage": "",
+      "steps": []
+    }
+  ]
+}

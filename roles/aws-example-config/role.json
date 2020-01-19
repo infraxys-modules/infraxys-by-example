@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "description": "Shared AWS configuration for vpc-example",
+  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\role\\aws-example-config",
+  "group": "",
+  "requiredPackets": [],
+  "instances": [
+    {
+      "guid": "0c32acc9-33b1-4ca6-8709-3ed317e92cba",
+      "packetGuid": "github.com\\infraxys-modules\\aws-core\\master\\aws core terraform bucket",
+      "velocityName": "",
+      "instanceGroups": "",
+      "aws_core_s3_state_bucket": "infraxys-by-example-state",
+      "aws_core_s3_state_folder": "${environment.name}-state",
+      "aws_core_s3_state_region": "eu-west-1"
+    },
+    {
+      "guid": "5609336a-40ca-4380-891f-690753f5b7f1",
+      "packetGuid": "github.com\\infraxys-modules\\aws-core\\master\\aws core variables",
+      "velocityName": "",
+      "instanceGroups": "",
+      "aws_core_credentials_default_profile_or_role": "infraxys-dev-admin",
+      "aws_core_environment_name": "$environment.name",
+      "aws_core_propagated_tag_list": "  {\n    key \u003d \"Name\"\n    value  \u003d \"\u003cname\u003e\"\n    propagate_at_launch \u003d true\n  },\n  {\n    key \u003d \"Environment\"\n    value  \u003d \"$instance.getAttribute(\"aws_core_environment_name\")\"\n    propagate_at_launch \u003d true\n  }",
+      "aws_core_region": "eu-west-1",
+      "aws_core_tag_list": "    Environment \u003d \"$instance.getAttribute(\"aws_core_environment_name\")\",\n    Name        \u003d \"\u003cname\u003e\"",
+      "instances": [
+        {
+          "guid": "d4336777-e386-401d-abb3-cbda1c4b43d4",
+          "packetGuid": "github.com\\infraxys-modules\\aws-vpc\\master\\aws vpc variables",
+          "velocityName": "",
+          "instanceGroups": "",
+          "aws_vpc_az_count": "2",
+          "aws_vpc_cidr": "10.0.0.0/20",
+          "aws_vpc_name": "$instance.getAttribute(\"aws_vpc_name_prefix\")-vpc",
+          "aws_vpc_name_prefix": "vpc-example",
+          "aws_vpc_nat_scenario": "One NAT per availability zone",
+          "aws_vpc_region": "$instance.parent.getAttribute(\"aws_core_region\")",
+          "aws_vpc_terraform_version": "0.11.11",
+          "instances": [
+            {
+              "guid": "bf1dc18b-f3ec-47e0-b4ab-94878b4fa6f8",
+              "packetGuid": "github.com\\infraxys-modules\\aws-vpc\\master\\aws bastion variables",
+              "velocityName": "",
+              "instanceGroups": "",
+              "aws_vpc_bastion_key_pair_name": "infraxys-by-example",
+              "aws_vpc_bastion_name": "$instance.getAttribute(\"aws_vpc_name_prefix\")-bastion",
+              "aws_vpc_bastion_private_key_file": "/root/.ssh/keys/${instance.getAttribute(\"aws_vpc_bastion_key_pair_name\").replaceAll(\"-\", \"_\")}.pem"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
