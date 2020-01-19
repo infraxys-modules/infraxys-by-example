@@ -4,7 +4,7 @@ We'll create a fully configured AWS VPC using Terraform.
 
 ## Prerequisites
 
-- See the prerequisites-section [here](../../../README.md).
+- See the prerequisites-section [here](../../../prerequisites.md).
 - An AWS account (this might incur a cost). See [Create an AWS account](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start).
 - AWS access key and secret. See [Managing Access Keys (Console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
 - An S3-bucket to store the Terraform state files. This bucket needs to be writeable for the provided credentials. See [Terraform S3](https://www.terraform.io/docs/backends/types/s3.html).
