@@ -41,19 +41,14 @@ We'll create a key pair and store it as a variable in Infraxys
       
 ## Create Infraxys resources
 
-We'll create two roles and an environment. 
+We'll create one role and an environment that uses this and a VPC role. 
 
-__AWS auth and shared configuration role:__ 
+### Create the 'AWS auth and shared configuration' role
+
+This role:
 - automatically authenticates to AWS
 - contains configuration that can be shared with multiple containers and environments
-
-__VPC configuration role:__
-- contains the definition of the VPC, NAT IPs, security groups, ...
-- will provide the actions necessary to provision the resources
-
-The environment will have a container that inherits both roles. This environment will then be attached to a project after which the AWS setup can be done.
- 
-### Create the 'AWS auth and shared configuration' role
+- contains the necessary configuration for the VPC-role
 
 We'll create a role with configuration needed by the VPC and future resources that will be created in the VPC. These future resources might be configured through other environments and projects.
 
@@ -105,7 +100,9 @@ Creating the Elastic IP's separately allows us to delete the VPC with NAT-instan
 - In the "Instances and executables"-table, expand the "AWS - VPC" instance.
 - Drag action 'Terraform plan, confirm and apply' to the "Workflow steps" table. Make sure it's underneath the NAT-action because the VPC needs the IPs to be there.
 - Close the workflow
-- Add a second workflow called 'Destroy AWS resources' and use action 'Terraform plan DESTROY, confirm and apply' of the "AWS - VPC"-instance.
+- Add a second workflow called 'Destroy AWS resources' and attach the following actions to it:
+    - 'Terraform plan DESTROY, confirm and apply' of the "AWS - VPC"-instance.
+    - 'Terraform plan DESTROY, confirm and apply' of the "Static NAT IPs"-instance.
 
 
 ### Use the new environment
@@ -129,10 +126,16 @@ In the text-box under the console, press enter. The NAT-EIPs will be created.
 The second action automatically starts and again it will ask your confirmation before creating the VPC and sub-resources.
 
 Press enter in the text-box under the console
-  
+ 
+## Cleanup 
+
+- Open the context-menu of project 'infraxys-by-example' and select "Workflows -> Destroy AWS resources".
+- You will have to confirm by typing 'DESTROY' for both actions.
+
+
 ## Troubleshooting
 
-At the time of this writing the VPC-apply failed because the NAT-instances couldn't use the IPs.
+At the time of writing this, the VPC-apply failed because the NAT-instances couldn't use the IPs.
 
 The reason was that the NAT-instance in Infraxys had value 'us-east-1' for its region while the VPC was created in eu-west-1.
 
