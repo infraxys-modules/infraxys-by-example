@@ -1,7 +1,8 @@
 {
   "version": "1.0",
   "description": "Container under a module-environment",
-  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys-by-example-module-env\\module-container",
+  "name": "module-container",
+  "guid": "66e6d703-32ce-4a39-9b7a-76a2d3173ab8",
   "group": "",
   "instances": [
     {

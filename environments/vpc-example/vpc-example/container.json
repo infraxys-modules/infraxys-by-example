@@ -1,7 +1,8 @@
 {
   "version": "1.0",
   "description": "Example VPC in infraxys-by-example",
-  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\vpc-example\\vpc-example",
+  "name": "vpc-example",
+  "guid": "3a99348b-949d-4991-89c0-5486663914bd",
   "group": "",
   "instances": []
 }

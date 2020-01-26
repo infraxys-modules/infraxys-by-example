@@ -14,11 +14,12 @@ Most examples assume that the following configuration is already in place.
 
 ## GitHub module repository setup
 
+If you want to do the steps from the examples yourself, then you need to create a module in GitHub.
 See <a href="https://infraxys.io/topics/using-modules/" target="_blank">Infraxys modules</a> on how to setup your module repository.
 
-## Setup this infraxys-by-example module (optional)
+## Setup this infraxys-by-example module
 
-If you're not creating the packets and such in your own GitHub-repository, then you'll need this repository to be able to run the examples:
+If you're not creating the packets and such in your own GitHub-repository, then you'll need configure this repository to be able to run the examples:
 
 - Open the Modules-tab in the right slider.
 - Right-click in the Module-tree and select "Add module".

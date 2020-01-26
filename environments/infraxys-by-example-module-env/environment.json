@@ -1,10 +1,12 @@
 {
+  "version": "1.0",
   "name": "infraxys-by-example-module-env",
   "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys-by-example-module-env",
   "workflows": [
     {
       "name": "Demo REST call",
       "guid": "1a3677e7-1713-4773-aa8a-ff0c6db1c57b",
+      "runnableFromWebhook": true,
       "confirmationMessage": "",
       "steps": []
     }
