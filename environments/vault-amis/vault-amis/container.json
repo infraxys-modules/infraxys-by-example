@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "description": "AMIs for Vault and Consul",
+  "name": "vault-amis",
+  "guid": "de1dc819-cdba-466a-9e49-9420e1660a70",
+  "group": "",
+  "instances": []
+}

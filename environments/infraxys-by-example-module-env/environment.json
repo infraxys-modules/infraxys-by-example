@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "name": "infraxys-by-example-module-env",
-  "guid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys-by-example-module-env",
+  "guid": "5456c8c6-cdc9-49c8-8bb0-1b159582150e",
   "workflows": [
     {
       "name": "Demo REST call",

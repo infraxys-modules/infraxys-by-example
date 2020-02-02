@@ -14,8 +14,8 @@ We'll create a fully configured AWS VPC using Terraform.
 ### Required modules
 
 Make sure the following modules are in your module-list:
- - [AWS Core module](https://github.com/infraxys-modules/aws-core). Follow the instructions in this module to create the necessary variables.
- - [AWS VPC module](https://github.com/infraxys-modules/aws-vpc)
+ - [AWS Commons module](https://github.com/infraxys-aws/aws-commons). Follow the instructions in this module to create the necessary variables.
+ - [AWS VPC module](https://github.com/infraxys-aws/aws-vpc)
  - [Terraform module](https://github.com/infraxys-modules/terraform)
  
 ### Using AWS credentials
