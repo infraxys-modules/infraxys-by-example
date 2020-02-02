@@ -36,6 +36,7 @@
   ],
   "files": [
     {
+      "guid": "590c0ec5-ee81-43d8-9d9a-e71a8afd85f0",
       "filename": "run-example.sh",
       "includeName": "",
       "menuCaption": "Run blocked by file example",
@@ -57,6 +58,7 @@
       "menuPath": ""
     },
     {
+      "guid": "a254618e-1c42-46d5-868c-449ddd4c5548",
       "filename": "run-grant-example.sh",
       "includeName": "",
       "menuCaption": "Run has grant example",
@@ -78,6 +80,7 @@
       "menuPath": ""
     },
     {
+      "guid": "1eee9b6b-142d-4cdc-ba6c-4111b9b89915",
       "filename": "run-without-grant-example.sh",
       "includeName": "",
       "menuCaption": "Run hasn\u0027t got grant example",

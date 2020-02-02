@@ -36,6 +36,7 @@
   ],
   "files": [
     {
+      "guid": "b2159a97-e675-4448-9ce4-942299edd685",
       "filename": "rest_python1.py",
       "includeName": "",
       "menuCaption": "REST Python 1",

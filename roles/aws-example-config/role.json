@@ -8,7 +8,8 @@
   "instances": [
     {
       "guid": "0c32acc9-33b1-4ca6-8709-3ed317e92cba",
-      "packetGuid": "github.com\\infraxys-modules\\aws-core\\master\\aws core terraform bucket",
+      "parentGuid": "",
+      "packetGuid": "github.com\\infraxys-aws\\aws-commons\\master\\aws core terraform bucket",
       "velocityName": "",
       "instanceGroups": "",
       "aws_core_s3_state_bucket": "infraxys-by-example-state",
@@ -17,7 +18,8 @@
     },
     {
       "guid": "5609336a-40ca-4380-891f-690753f5b7f1",
-      "packetGuid": "github.com\\infraxys-modules\\aws-core\\master\\aws core variables",
+      "parentGuid": "",
+      "packetGuid": "github.com\\infraxys-aws\\aws-commons\\master\\aws core variables",
       "velocityName": "",
       "instanceGroups": "",
       "aws_core_credentials_default_profile_or_role": "infraxys-dev-admin",
@@ -28,7 +30,8 @@
       "instances": [
         {
           "guid": "d4336777-e386-401d-abb3-cbda1c4b43d4",
-          "packetGuid": "github.com\\infraxys-modules\\aws-vpc\\master\\aws vpc variables",
+          "parentGuid": "5609336a-40ca-4380-891f-690753f5b7f1",
+          "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws vpc variables",
           "velocityName": "",
           "instanceGroups": "",
           "aws_vpc_az_count": "2",
@@ -41,7 +44,8 @@
           "instances": [
             {
               "guid": "bf1dc18b-f3ec-47e0-b4ab-94878b4fa6f8",
-              "packetGuid": "github.com\\infraxys-modules\\aws-vpc\\master\\aws bastion variables",
+              "parentGuid": "d4336777-e386-401d-abb3-cbda1c4b43d4",
+              "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws bastion variables",
               "velocityName": "",
               "instanceGroups": "",
               "aws_vpc_bastion_key_pair_name": "infraxys-by-example",

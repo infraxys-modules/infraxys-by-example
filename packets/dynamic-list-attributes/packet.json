@@ -62,6 +62,7 @@
   ],
   "files": [
     {
+      "guid": "537c26c9-3617-4c1d-a71a-ff72cd38567e",
       "filename": "get_ec2_regions.sh",
       "includeName": "",
       "menuCaption": "get_ec2_regions.sh",

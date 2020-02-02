@@ -108,6 +108,7 @@
   ],
   "files": [
     {
+      "guid": "e568b265-0364-4506-8ce4-e76335691d53",
       "filename": "rest_python1.py",
       "includeName": "",
       "menuCaption": "REST Python 1",
