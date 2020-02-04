@@ -4,5 +4,94 @@
   "name": "vault-amis",
   "guid": "de1dc819-cdba-466a-9e49-9420e1660a70",
   "group": "",
-  "instances": []
+  "instances": [
+    {
+      "guid": "d0ba7192-628f-4ed5-aa9c-4e50f92a1075",
+      "parentGuid": "",
+      "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform aws runner",
+      "velocityName": "",
+      "instanceGroups": "",
+      "aws_provider_version": "~\u003e 2.32.0",
+      "aws_region": "$terraformVpcState.getAttribute(\"aws_region\")",
+      "extra_terraform": "",
+      "instance_label": "Packer Terraform state",
+      "skip_terraform_action_creation": "1",
+      "state_velocity_names": "terraformVpcState",
+      "instances": [
+        {
+          "guid": "486cae1f-1fcb-4997-bbdc-e2a1f96d1e6e",
+          "parentGuid": "d0ba7192-628f-4ed5-aa9c-4e50f92a1075",
+          "packetGuid": "github.com\\infraxys-modules\\aws-ec2\\master\\security group",
+          "velocityName": "packerSg",
+          "instanceGroups": "",
+          "description": "Security group  to access Packer instances through the bastion host",
+          "egress_rules": "  egress {\n    protocol \u003d -1\n    from_port \u003d 0\n    to_port \u003d 0\n    cidr_blocks \u003d [\n      \"0.0.0.0/0\"\n    ]\n  }",
+          "extra_terraform": "",
+          "ingress_rules": "  ingress {\n    protocol    \u003d \"tcp\"\n    from_port   \u003d 22\n    to_port     \u003d 22\n    security_groups \u003d [data.terraform_remote_state.vpc.outputs.${bastionSg.getAttribute(\"security_group_name\")}_id]\n  }",
+          "security_group_name": "packer-sg",
+          "tags": "\"Name\": \"packer-sg\""
+        }
+      ]
+    },
+    {
+      "guid": "a3b209e1-40e7-45e7-b884-6c74892e1bf0",
+      "parentGuid": "",
+      "packetGuid": "github.com\\infraxys-aws\\aws-packer\\master\\packer aws build environment",
+      "velocityName": "",
+      "instanceGroups": "",
+      "aws_region": "eu-west-1",
+      "bastion_name": "$instance.byVelocity(\"bastion_velocity_name\").getAttribute(\"bastion_name\")-asg",
+      "bastion_velocity_name": "bastionHost",
+      "security_group_name": "$packerSg.getAttribute(\"security_group_name\")",
+      "ssh_bastion_private_key_file": "$instance.byVelocity(\"bastion_velocity_name\").getAttribute(\"private_key_file\")",
+      "ssh_bastion_username": "$instance.byVelocity(\"bastion_velocity_name\").getAttribute(\"ssh_username\")",
+      "subnet_name": "$instance.byVelocity(\"vpc_velocity_name\").getAttribute(\"vpc_name_prefix\")-private-sn",
+      "vpc_velocity_name": "vpc",
+      "instances": [
+        {
+          "guid": "93f24ae9-8d99-491d-8020-8f836c23f12d",
+          "parentGuid": "a3b209e1-40e7-45e7-b884-6c74892e1bf0",
+          "packetGuid": "github.com\\infraxys-modules\\packer-aws-ubuntu\\18.04-master\\packer aws ubuntu",
+          "velocityName": "",
+          "instanceGroups": "",
+          "ami_description": "Docker 18.06 on Ubuntu 18.04 AMI",
+          "ami_name_prefix": "ubuntu-18.04",
+          "associate_public_ip_address": "0",
+          "debug_mode": "0",
+          "do_encrypt_boot": "0",
+          "source_ami": "ami-0727f3c2d4b0226d5",
+          "instances": [
+            {
+              "guid": "d19ea6a0-0167-4180-9772-6d0b3707c85f",
+              "parentGuid": "93f24ae9-8d99-491d-8020-8f836c23f12d",
+              "packetGuid": "github.com\\infraxys-modules\\packer-aws-docker\\docker-18.06-ubuntu-18.04\\packer aws docker",
+              "velocityName": "",
+              "instanceGroups": "",
+              "ami_description": "Docker 18.06 on Ubuntu AMI",
+              "ami_name_prefix": "docker-18.06-on-ubuntu",
+              "associate_public_ip_address": "0",
+              "debug_mode": "0",
+              "do_encrypt_boot": "0",
+              "source_ami": "",
+              "instances": [
+                {
+                  "guid": "53acb117-fdb1-42e0-9b87-85d99e840d6e",
+                  "parentGuid": "d19ea6a0-0167-4180-9772-6d0b3707c85f",
+                  "packetGuid": "github.com\\infraxys-modules\\packer-aws-infraxys\\master\\packer aws infraxys",
+                  "velocityName": "awsAMIInfraxys",
+                  "instanceGroups": "",
+                  "ami_description": "Infraxys 1.4",
+                  "ami_name_prefix": "infraxys-1.4",
+                  "associate_public_ip_address": "0",
+                  "debug_mode": "0",
+                  "do_encrypt_boot": "0",
+                  "source_ami": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

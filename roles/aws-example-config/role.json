@@ -13,7 +13,7 @@
       "velocityName": "",
       "instanceGroups": "",
       "aws_core_s3_state_bucket": "infraxys-by-example-state",
-      "aws_core_s3_state_folder": "${environment.name}-state",
+      "aws_core_s3_state_folder": "${container.name}-state",
       "aws_core_s3_state_region": "eu-west-1"
     },
     {
@@ -50,7 +50,7 @@
               "instanceGroups": "",
               "aws_vpc_bastion_key_pair_name": "infraxys-by-example",
               "aws_vpc_bastion_name": "$instance.getAttribute(\"aws_vpc_name_prefix\")-bastion",
-              "aws_vpc_bastion_private_key_file": "/root/.ssh/keys/${instance.getAttribute(\"aws_vpc_bastion_key_pair_name\").replaceAll(\"-\", \"_\")}.pem"
+              "aws_vpc_bastion_private_key_file": "/root/.ssh/keys/$instance.getAttribute(\"aws_vpc_bastion_key_pair_name\")"
             }
           ]
         }

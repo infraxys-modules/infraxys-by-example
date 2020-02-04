@@ -30,7 +30,22 @@
       "guid": "d2c8d806-c2a0-4c55-852e-cd23ecfbe08f",
       "runnableFromWebhook": true,
       "confirmationMessage": "",
-      "steps": []
+      "steps": [
+        {
+          "name": "Terraform plan DESTROY, confirm and apply",
+          "location": 1,
+          "instanceGuid": "guid-46433",
+          "containerGuid": "3a99348b-949d-4991-89c0-5486663914bd",
+          "filename": "terraform_plan_destroy_confirm_apply.sh"
+        },
+        {
+          "name": "Terraform plan DESTROY, confirm and apply",
+          "location": 2,
+          "instanceGuid": "guid-46420",
+          "containerGuid": "3a99348b-949d-4991-89c0-5486663914bd",
+          "filename": "terraform_plan_destroy_confirm_apply.sh"
+        }
+      ]
     }
   ]
 }
