@@ -72,22 +72,7 @@
               "associate_public_ip_address": "0",
               "debug_mode": "0",
               "do_encrypt_boot": "0",
-              "source_ami": "",
-              "instances": [
-                {
-                  "guid": "53acb117-fdb1-42e0-9b87-85d99e840d6e",
-                  "parentGuid": "d19ea6a0-0167-4180-9772-6d0b3707c85f",
-                  "packetGuid": "github.com\\infraxys-modules\\packer-aws-infraxys\\master\\packer aws infraxys",
-                  "velocityName": "awsAMIInfraxys",
-                  "instanceGroups": "",
-                  "ami_description": "Infraxys 1.4",
-                  "ami_name_prefix": "infraxys-1.4",
-                  "associate_public_ip_address": "0",
-                  "debug_mode": "0",
-                  "do_encrypt_boot": "0",
-                  "source_ami": ""
-                }
-              ]
+              "source_ami": ""
             }
           ]
         }
