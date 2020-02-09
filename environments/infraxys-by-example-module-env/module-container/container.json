@@ -4,6 +4,7 @@
   "name": "module-container",
   "guid": "66e6d703-32ce-4a39-9b7a-76a2d3173ab8",
   "group": "",
+  "roles": [],
   "instances": [
     {
       "guid": "bffca934-d0fb-4ff8-95a0-4a5c9dfa4c0a",
