@@ -51,7 +51,7 @@
         {
           "guid": "93f24ae9-8d99-491d-8020-8f836c23f12d",
           "parentGuid": "a3b209e1-40e7-45e7-b884-6c74892e1bf0",
-          "packetGuid": "github.com\\infraxys-modules\\packer-aws-ubuntu\\18.04-master\\packer aws ubuntu",
+          "packetGuid": "github.com\\infraxys-aws\\aws-packer-ubuntu\\ubuntu-18.04\\packer aws ubuntu",
           "velocityName": "",
           "instanceGroups": "",
           "ami_description": "Docker 18.06 on Ubuntu 18.04 AMI",
@@ -64,7 +64,7 @@
             {
               "guid": "d19ea6a0-0167-4180-9772-6d0b3707c85f",
               "parentGuid": "93f24ae9-8d99-491d-8020-8f836c23f12d",
-              "packetGuid": "github.com\\infraxys-modules\\packer-aws-docker\\docker-18.06-ubuntu-18.04\\packer aws docker",
+              "packetGuid": "github.com\\infraxys-aws\\aws-packer-docker\\docker-18.06-ubuntu-18.04\\packer aws docker",
               "velocityName": "",
               "instanceGroups": "",
               "ami_description": "Docker 18.06 on Ubuntu AMI",
