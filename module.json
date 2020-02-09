@@ -9,6 +9,10 @@
       "branch": "master"
     },
     {
+      "git_url": "https://github.com/infraxys-aws/aws-ec2.git",
+      "branch": "master"
+    },
+    {
       "git_url": "https://github.com/infraxys-aws/aws-packer.git",
       "branch": "master"
     },
