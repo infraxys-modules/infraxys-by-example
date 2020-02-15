@@ -3,7 +3,6 @@
   "description": "Container under a module-environment",
   "name": "module-container",
   "guid": "66e6d703-32ce-4a39-9b7a-76a2d3173ab8",
-  "group": "",
   "roles": [],
   "instances": [
     {

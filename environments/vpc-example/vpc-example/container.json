@@ -3,7 +3,6 @@
   "description": "Example VPC in infraxys-by-example",
   "name": "vpc-example",
   "guid": "3a99348b-949d-4991-89c0-5486663914bd",
-  "group": "",
   "roles": [
     {
       "roleGuid": "42cbb993-5aef-4f35-82a1-745d0b22d1ee"
