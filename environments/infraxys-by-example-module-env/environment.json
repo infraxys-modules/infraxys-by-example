@@ -2,13 +2,5 @@
   "version": "1.0",
   "name": "infraxys-by-example-module-env",
   "guid": "5456c8c6-cdc9-49c8-8bb0-1b159582150e",
-  "workflows": [
-    {
-      "name": "Demo REST call",
-      "guid": "1a3677e7-1713-4773-aa8a-ff0c6db1c57b",
-      "runnableFromWebhook": true,
-      "confirmationMessage": "",
-      "steps": []
-    }
-  ]
+  "workflows": []
 }
