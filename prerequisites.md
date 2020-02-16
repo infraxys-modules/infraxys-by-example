@@ -10,7 +10,7 @@ Most examples assume that the following configuration is already in place.
 ## Infraxys container setup
 - Create project "infraxys-by-example" underneath a project of your choice.
 - Create environment "examples" under this project.
-- Create a container "examples" under this environment.
+- Create container "examples" with description "infraxys-by-example" under this environment.
 
 ## GitHub module repository setup
 
@@ -21,15 +21,16 @@ See <a href="https://infraxys.io/topics/using-modules/" target="_blank">Infraxys
 
 If you're not creating the packets and such in your own GitHub-repository, then you'll need configure this repository to be able to run the examples:
 
+* infraxys-by-example is normally already in your module-list. In case not:
 - Open the Modules-tab in the right slider.
 - Right-click in the Module-tree and select "Add module".
 - Specify `https://github.com/infraxys-modules/infraxys-by-example.git` for Module URL.
-![add module](resources/add-module.png "Add module")
-- No need to specify an SSH key here since we're not going to modify this module.
+- No need to specify an SSH key or token here since we're not going to modify this module.
 - Click the "Save >"-button. Infraxys will retrieve the branches from the module.
-![connect branch](resources/connect-branch.png "Connect branch")
-- Right-click the master-branch and select the import option. Infraxys will import all available packets and modules.
+- Right-click the master-branch and select the import option. 
+    - -> Infraxys will import all available packets, roles and environments. For the infraxys-by-example module and all modules that it depends on.
 - Click "Finish".
 
-When new examples are added, you can import them through the context-menu of this master-branch:
-![pull branch](resources/pull-module-branch.png "Pull module branch")
+When new examples are added, you can import them through the "Git"-context-menu of this master-branch.
+It's best to always include dependencies when manually pulling from Git.
+

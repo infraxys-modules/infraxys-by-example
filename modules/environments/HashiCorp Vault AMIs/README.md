@@ -1,5 +1,8 @@
 # HashiCorp Vault Cluster - Step 1: AMIs
 
+## This example is still work in progress. First, the installation of Infraxys Server will be done.
+
+
 In this example we'll create the base AMIs needed to setup a HashiCorp Vault and Consul cluster.
 
 The repository we'll use is a fork of [https://github.com/hashicorp/terraform-aws-vault](the GitHub repository) provided by HashiCorp.
