@@ -32,18 +32,18 @@
       "confirmationMessage": "",
       "steps": [
         {
-          "name": "Terraform plan, confirm and apply",
+          "name": "Terraform plan DESTROY, confirm and apply",
           "location": 1,
-          "instanceGuid": "guid-46433",
-          "containerGuid": "3a99348b-949d-4991-89c0-5486663914bd",
-          "packetFileGuid": "a9e6c6ce-3278-4714-83cb-674bb7f0fe49"
-        },
-        {
-          "name": "Terraform plan, confirm and apply",
-          "location": 2,
           "instanceGuid": "87244696-c442-4d28-ad53-eb8c2336fa20",
           "containerGuid": "3a99348b-949d-4991-89c0-5486663914bd",
-          "packetFileGuid": "a9e6c6ce-3278-4714-83cb-674bb7f0fe49"
+          "packetFileGuid": "ab1261a4-01d5-49a5-b0a4-7d22c5a4b276"
+        },
+        {
+          "name": "Terraform plan DESTROY, confirm and apply",
+          "location": 2,
+          "instanceGuid": "guid-46433",
+          "containerGuid": "3a99348b-949d-4991-89c0-5486663914bd",
+          "packetFileGuid": "ab1261a4-01d5-49a5-b0a4-7d22c5a4b276"
         }
       ]
     }
