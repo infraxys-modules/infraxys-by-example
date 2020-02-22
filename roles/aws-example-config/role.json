@@ -9,7 +9,7 @@
       "guid": "0c32acc9-33b1-4ca6-8709-3ed317e92cba",
       "parentGuid": "",
       "packetGuid": "github.com\\infraxys-aws\\aws-commons\\master\\aws core terraform bucket",
-      "velocityName": "",
+      "velocityName": "tfStateBucket",
       "instanceGroups": "",
       "aws_core_s3_state_bucket": "infraxys-by-example-state",
       "aws_core_s3_state_folder": "${container.name}-state",
