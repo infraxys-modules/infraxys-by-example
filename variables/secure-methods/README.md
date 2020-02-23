@@ -82,7 +82,7 @@ The result will look like the following:
  
 ### Only allow method invocation for users with specific grants
 
-This method is not available in Infraxys Developer since no users and profiles can be managed.
+This method is not available in Infraxys Developer since no users and teams can be managed.
 
 Here we'll create an action that will fail if the user doesn't have custom grant "i-can-execute-it".  
 
@@ -92,13 +92,13 @@ check_grant is a convenience method that exits the action if the current user do
 #### Create the custom grant "i-can-execute-it"
 
 - Open a project that contains an account to test this setup.
-- Open the "Profiles"-tab.
+- Open the "Teams"-tab.
 - Click "Create profile" in the context-menu.
 - Save and close the profile.
 - Open the "Custom grants"-tab.
 - Click "Create grant" in the context-menu.
 - Call it "i-can-execute-it" and click "Save".
-- Drag above profile to the right column "Profiles with this grant". Users that have this profile now have this grant.
+- Drag above profile to the right column "Teams with this grant". Users that have this profile now have this grant.
 
 #### Create another action
 
