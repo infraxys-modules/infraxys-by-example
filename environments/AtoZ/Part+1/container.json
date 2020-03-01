@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "description": "First part of the Infraxys \"AtoZ\"-example",
+  "name": "Part 1",
+  "guid": "5794f5fc-98b4-4c9f-981d-5e2192c610fe",
+  "roles": [],
+  "instances": [
+    {
+      "guid": "b967d5ba-da36-4b8e-b5e1-f96df0d7d6c9",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\display message",
+      "velocityName": "",
+      "instanceGroups": "",
+      "display_message": "Hello world"
+    }
+  ]
+}
