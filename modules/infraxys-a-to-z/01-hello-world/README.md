@@ -41,7 +41,7 @@ See the [prequisites](./prerequisites.md)-page.
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Attribute | display_message | |
-| Caption | | Display message |
+| Caption | | Display message | |
 | Type | Text (one line) | |
 | Required | Checked | |
 | Input prompt | <Enter a message here> | |
@@ -111,4 +111,3 @@ See the [prequisites](./prerequisites.md)-page.
     - Infraxys will then start the default provisioning-container, enable all referenced modules and execute the action. See [execution-order](https://infraxys.io/topics/execution-order/) for more details.
     - Finally the message, specified in the instance, will be displayed in the console.
 - Click "Display popup"
-
