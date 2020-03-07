@@ -27,7 +27,6 @@
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "tooltip": "",
       "scope": "Instance",

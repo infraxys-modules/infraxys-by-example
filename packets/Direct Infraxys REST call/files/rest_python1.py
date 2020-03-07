@@ -21,7 +21,7 @@ json = {
 
 
 headers = {'Content-Type': 'application/json'}
-url = "{}/{}".format(os.environ['INFRAXYS_REST_ENDPOINT'], 'environments/execute')
+url = "{}/{}".format(os.environ['INFRAXYS_REST_ENDPOINT'], 'environments/master/execute')
 # bearer = ''; # get from a Variable or from an external Vault, ... Not needed for Infraxys developer
 # headers.update({'Authorization': 'Bearer {}'.format(bearer),
 #                'Content-Type': 'application/json'
