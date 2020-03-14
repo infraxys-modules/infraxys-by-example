@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "label": "Inherit example",
+  "type": "",
+  "autoExpand": false,
+  "skipEveryInstanceFiles": false,
+  "limitToAllowedChildren": false,
+  "autoGenerate": false,
+  "inheritFilesFromPacketGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\display message",
+  "key": "",
+  "infoHtml": "",
+  "attributes": [],
+  "files": [],
+  "allowedChildren": []
+}

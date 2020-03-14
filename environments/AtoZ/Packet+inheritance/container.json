@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "description": "Packet inheritance example",
+  "name": "Packet inheritance",
+  "guid": "f12faf41-dd57-4c46-b152-b297c7664854",
+  "roles": [],
+  "instances": [
+    {
+      "guid": "4f64a9e9-aa4c-423a-ae7e-3a01e93fce65",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\display message - inherited",
+      "velocityName": "",
+      "instanceGroups": ""
+    }
+  ]
+}

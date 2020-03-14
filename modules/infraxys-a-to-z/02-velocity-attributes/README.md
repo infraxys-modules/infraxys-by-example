@@ -19,7 +19,7 @@ In this example we will:
    
 ## Prerequisites
 
-Executed the [01-hello-world](../01-hello-world/README.md)-example.
+Executed the [01 - Hello World](../01-hello-world/README.md)-example.
 
 ## Steps
 
