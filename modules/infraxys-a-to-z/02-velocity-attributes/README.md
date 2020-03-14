@@ -121,31 +121,37 @@ Open the display_message attribute, select 'Parse with Velocity' and save your c
 - Click Save and close the container.
 - Open the "Instances"-tab of the Main-container.
 - Drop "Instance scoped attribute" on the root-instance.
+
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Instance message | Instance scoped message |  |
 
 - Drop "Velocity example"-packet on this new "Scoped attributes" instance so that it become a child of it.
+
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Display message | $instance.parent.getAttribute("instance_message") | $instance is a Java object representing an instance. $instance.parent returns the direct parent-instance of this one |
 
 - Drop "Container scoped attribute" on the root-instance.
+
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Container message | Container scoped message |  |
 
 - Drop another "Velocity example"-packet on the root-instance.
+
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Display message | $container.getAttribute("container_message") | $container is a Java object representing a container.
 
 - Drop another "Velocity example"-packet on the root-instance.
+
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Display message | $environment.getAttribute("environment_message") | This will get the attribute value of the instance on the other container. |
 
 - Drop another "Velocity example"-packet on the root-instance.
+
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Display message | $instanceScopyVelocityName.getAttribute("instance_message") | $instanceScopyVelocityName returns the instance with this Velocity name that we created on the "Environment scope example"-container. |
@@ -164,5 +170,6 @@ If everything went well, 6 actions are created.
  
 Your Main-container instance tree should now look like the following:
 ![Main-instance-tree.png](resources/Main-instance-tree.png)
+
 
 You can now execute the executions for the "Velocity example"-example instances and see that the values of the referenced attributes are displayed.
