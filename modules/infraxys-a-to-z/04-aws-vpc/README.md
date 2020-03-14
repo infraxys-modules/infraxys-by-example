@@ -2,7 +2,7 @@
 
 For the coming examples, we'll need a VPC prepared.
 
-Please follow the instructions in [AWS VPC](modules/environments/VPC/README.md) to do so.
+Please follow the instructions in [AWS VPC](/modules/environments/VPC/README.md) to do so.
 
 ## Prerequisites
 
