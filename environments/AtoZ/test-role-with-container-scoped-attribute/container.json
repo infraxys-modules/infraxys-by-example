@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "description": "Inherit role example",
+  "name": "test-role-with-container-scoped-attribute",
+  "guid": "51a5f0ad-4f90-4d26-9757-0f1f6a698a53",
+  "roles": [
+    {
+      "roleGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\role-with-container-scoped-attribute"
+    }
+  ],
+  "instances": [
+    {
+      "guid": "e3c1fb12-5db4-423f-a365-5fec1ccbe4d7",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "velocityName": "",
+      "instanceGroups": "",
+      "display_message": "$container.getAttribute(\"container_message\")"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "description": "Role example",
+  "name": "role-with-container-scoped-attribute",
+  "group": "",
+  "requiredPackets": [],
+  "instances": [
+    {
+      "guid": "764e7b9b-675c-41e0-b0df-50bf440cda8c",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\container scoped attribute",
+      "velocityName": "",
+      "instanceGroups": "",
+      "container_message": "This comes from the role"
+    }
+  ]
+}
