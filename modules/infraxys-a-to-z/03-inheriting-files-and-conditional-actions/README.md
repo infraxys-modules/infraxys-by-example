@@ -24,6 +24,12 @@ Executed the [02 - Using Apache Velocity and scoped attributes](../02-velocity-a
 
 Hover over the "Inherit files"-label for a tooltip.
 
+The scripts we're inheriting expect attribute "display_message" to exist. To add this, we'll copy it from the "Display message" packet:
+- Open the "Display message"-packet.
+- Copy the "display_message"-attribute using the context-menu of the "Attributes"-table.
+- Open the "Attributes"-tab of the just created "Display message - inherited" packet.
+- Right-click in the "Attributes"-table and select "Paste".
+
 ### Container setup
 
 - Create a new container "Packet inheritance" with description "Packet inheritance example" under the "AtoZ"-environment.

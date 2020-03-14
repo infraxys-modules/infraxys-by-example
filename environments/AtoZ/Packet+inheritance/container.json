@@ -9,7 +9,8 @@
       "guid": "4f64a9e9-aa4c-423a-ae7e-3a01e93fce65",
       "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\display message - inherited",
       "velocityName": "",
-      "instanceGroups": ""
+      "instanceGroups": "",
+      "display_message": "This is displayed by an inherited action"
     }
   ]
 }

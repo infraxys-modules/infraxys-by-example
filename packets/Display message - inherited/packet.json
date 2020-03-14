@@ -9,7 +9,30 @@
   "inheritFilesFromPacketGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\display message",
   "key": "",
   "infoHtml": "",
-  "attributes": [],
+  "attributes": [
+    {
+      "name": "display_message",
+      "caption": "Display message",
+      "type": "java.lang.String",
+      "formColumn": 1,
+      "formOrder": 1100,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": true,
+      "isPartOfKey": false,
+      "listOfValues": "",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildGuidFilter": "",
+      "newItemsAllowed": false,
+      "parseWithVelocity": false,
+      "cloneAttribute": true,
+      "inputPrompt": "\u003cEnter a message here\u003e",
+      "tooltip": "\u003ch2\u003eDisplay message\u003c/h2\u003e\u003cp\u003eEnter the message to display.\u003c/p\u003e",
+      "scope": "Instance",
+      "defaultValue": ""
+    }
+  ],
   "files": [],
   "allowedChildren": []
 }
