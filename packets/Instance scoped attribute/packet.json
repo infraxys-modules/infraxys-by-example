@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "label": "%instance_message%",
+  "type": "",
+  "autoExpand": true,
+  "skipEveryInstanceFiles": false,
+  "limitToAllowedChildren": false,
+  "autoGenerate": false,
+  "inheritFilesFromPacketGuid": "",
+  "key": "",
+  "infoHtml": "",
+  "attributes": [
+    {
+      "name": "instance_message",
+      "caption": "Instance message",
+      "type": "java.lang.String",
+      "formColumn": 1,
+      "formOrder": 1100,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": false,
+      "isPartOfKey": false,
+      "listOfValues": "",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildGuidFilter": "",
+      "newItemsAllowed": false,
+      "parseWithVelocity": false,
+      "cloneAttribute": true,
+      "inputPrompt": "",
+      "tooltip": "",
+      "scope": "Instance",
+      "defaultValue": ""
+    }
+  ],
+  "files": [],
+  "allowedChildren": []
+}

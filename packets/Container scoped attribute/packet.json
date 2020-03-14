@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "label": "%container_message%",
+  "type": "",
+  "autoExpand": false,
+  "skipEveryInstanceFiles": false,
+  "limitToAllowedChildren": false,
+  "autoGenerate": false,
+  "inheritFilesFromPacketGuid": "",
+  "key": "",
+  "infoHtml": "",
+  "attributes": [
+    {
+      "name": "container_message",
+      "caption": "Container message",
+      "type": "java.lang.String",
+      "formColumn": 1,
+      "formOrder": 1200,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": false,
+      "isPartOfKey": false,
+      "listOfValues": "",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildGuidFilter": "",
+      "newItemsAllowed": false,
+      "parseWithVelocity": false,
+      "cloneAttribute": true,
+      "inputPrompt": "",
+      "tooltip": "",
+      "scope": "Container",
+      "defaultValue": ""
+    }
+  ],
+  "files": [],
+  "allowedChildren": []
+}

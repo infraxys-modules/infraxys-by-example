@@ -1,4 +1,4 @@
-# Infraxys A to Z: Hello World
+# Infraxys A to Z: 01 - Hello World
 
 In this example we will:
 - Add packet "Display message" to our personal Infraxys module.
@@ -16,7 +16,7 @@ In this example we will:
    
 ## Prerequisites
 
-See the [prequisites](./prerequisites.md)-page.
+See the [prequisites](../../../prerequisites.md)-page.
 
 ## Steps
 
@@ -81,7 +81,6 @@ See the [prequisites](./prerequisites.md)-page.
 
 - Right-click on your "infraxys-by-example"-project which you've created as part of the initial prerequisites.
 - Select "Add project", name it "Example modules", click "Save" and close the project-tab.
-- Right-click this new "Example modules"-project in the left project-tree and select "Add environment".
 - In the right module-slider, under the module where you created the "Display message"-packet, right-click the "Environments" item and select "Add environment".
 - Specify "AtoZ" for the name and click "Save".
 - In the containers-tab, add a new container using the context-menu.

@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "label": "%environment_message%",
+  "type": "",
+  "autoExpand": false,
+  "skipEveryInstanceFiles": false,
+  "limitToAllowedChildren": false,
+  "autoGenerate": false,
+  "inheritFilesFromPacketGuid": "",
+  "key": "",
+  "infoHtml": "",
+  "attributes": [
+    {
+      "name": "environment_message",
+      "caption": "Environment message",
+      "type": "java.lang.String",
+      "formColumn": 2,
+      "formOrder": 2100,
+      "visibility": "ALWAYS VISIBLE",
+      "writability": "ALWAYS",
+      "required": false,
+      "isPartOfKey": false,
+      "listOfValues": "",
+      "referenceFilter": "",
+      "referenceValueAttributeName": "",
+      "referenceChildGuidFilter": "",
+      "newItemsAllowed": false,
+      "parseWithVelocity": false,
+      "cloneAttribute": true,
+      "inputPrompt": "",
+      "tooltip": "",
+      "scope": "Environment",
+      "defaultValue": ""
+    }
+  ],
+  "files": [],
+  "allowedChildren": []
+}

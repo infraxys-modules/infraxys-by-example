@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "description": "Environment scope container",
+  "name": "Environment scope example",
+  "guid": "8da657d1-6e88-4c06-aa6f-bc4735457b18",
+  "roles": [],
+  "instances": [
+    {
+      "guid": "4b4f3ecd-bd21-42a5-b391-298492174a82",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\environment scoped attribute",
+      "velocityName": "",
+      "instanceGroups": "",
+      "environment_message": "Environment scope"
+    },
+    {
+      "guid": "18eec92b-28c2-4c55-b3a8-48695881b22f",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\instance scoped attribute",
+      "velocityName": "instanceScopyVelocityName",
+      "instanceGroups": "",
+      "instance_message": "Instance scope notification with velocity name"
+    }
+  ]
+}

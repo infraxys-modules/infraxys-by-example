@@ -12,7 +12,8 @@ See [this page](./prerequisites.md).
 
 This section will be updated regularly with more-and-more practical examples. We'll start with a "Hello world" message and work from this to a fully up-and-running HashiCorp Vault cluster.
 
-1. [Hello World packet](modules/infraxys-a-to-z/01-hello-world/README.md)
+1. [Hello World - packet](modules/infraxys-a-to-z/01-hello-world/README.md)
+2. [Using Velocity](modules/infraxys-a-to-z/02-velocity-attributes/README.md)
 
 ### Variables
 

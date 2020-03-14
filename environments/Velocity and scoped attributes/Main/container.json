@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "description": "Main container",
+  "name": "Main",
+  "guid": "275e0251-8c76-44ec-b31f-ada1717ffb56",
+  "roles": [],
+  "instances": [
+    {
+      "guid": "dfdab610-6013-442a-b68e-b62103185a43",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\instance scoped attribute",
+      "velocityName": "",
+      "instanceGroups": "",
+      "instance_message": "Instance scoped message",
+      "instances": [
+        {
+          "guid": "c14f8549-23ea-4220-bfeb-2da6b48bb554",
+          "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+          "velocityName": "",
+          "instanceGroups": "",
+          "display_message": "$instance.parent.getAttribute(\"instance_message\")"
+        }
+      ]
+    },
+    {
+      "guid": "e66d3e81-d56e-48a0-b1e5-d01c8c8a1dd6",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "velocityName": "",
+      "instanceGroups": "",
+      "display_message": "$instanceScopyVelocityName.getAttribute(\"instance_message\")"
+    },
+    {
+      "guid": "da18b6ec-53dd-48d6-87ab-5c50c921c398",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "velocityName": "",
+      "instanceGroups": "",
+      "display_message": "$environment.getAttribute(\"environment_message\")"
+    },
+    {
+      "guid": "bcae7ccd-33f9-413f-9379-1e06e974aa67",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\container scoped attribute",
+      "velocityName": "",
+      "instanceGroups": "",
+      "container_message": "Container scoped message"
+    },
+    {
+      "guid": "2638662a-cab8-40ae-9d1f-59bb2ec28c9e",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "velocityName": "",
+      "instanceGroups": "",
+      "display_message": "$container.getAttribute(\"container_message\")"
+    }
+  ]
+}
