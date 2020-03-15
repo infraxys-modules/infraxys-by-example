@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "description": "Execute over SSH example",
+  "name": "Execute over SSH",
+  "guid": "dcfbe1ec-4ab0-4b53-8084-4226bab63b91",
+  "roles": [],
+  "instances": [
+    {
+      "guid": "30411c30-dfa2-4243-a82a-f9446b83cdcf",
+      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\execute over ssh",
+      "velocityName": "",
+      "instanceGroups": ""
+    }
+  ]
+}

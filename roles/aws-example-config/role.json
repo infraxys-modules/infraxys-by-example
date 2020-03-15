@@ -49,7 +49,7 @@
               "aws_vpc_bastion_key_pair_name": "infraxys-by-example",
               "aws_vpc_bastion_name": "$instance.getAttribute(\"aws_vpc_name_prefix\")-bastion",
               "aws_vpc_bastion_private_key_file": "/root/.ssh/keys/$instance.getAttribute(\"aws_vpc_bastion_key_pair_name\")",
-              "aws_vpc_bastion_ssh_cidr_blocks": "        \"1.1.1.1/32\", # Place 1\n        \"2.2.2.2/32\" # Place 2",
+              "aws_vpc_bastion_ssh_cidr_blocks": "        \"34.99.148.44/32\"",
               "aws_vpc_bastion_username": "ec2-user"
             }
           ]

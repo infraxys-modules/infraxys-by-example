@@ -32,7 +32,7 @@ We'll create a key pair and store it as a variable in Infraxys
 - Download the file and copy the contents
 - Open project "infraxys-by-example" and click the variables-tab
 - Add a variable:
-    - Name: `infraxys-by-example`
+    - Name: `infraxys-by-example.pem`
     - Value: paste the contents of the pem-file
     - Type: `SSH-PRIVATE-KEY`
     - Uncheck the option to export this as an environment variable and leave the other options selected.

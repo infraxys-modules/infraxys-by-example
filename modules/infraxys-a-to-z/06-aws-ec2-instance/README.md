@@ -13,7 +13,7 @@ Executed the [05 - Create a VPC in AWS](../05-aws-vpc/README.md)-example.
 
 ## Steps
 
-- Add project "AtoZ - AWS" under your examples-project.
+- Create project "AtoZ - AWS" under your examples-project.
 - Click "Save".
 - Select environment "vpc-example" under the "infraxys-by-example"-project.
 - Drag container "vpc-example" and drop it in the "Included for this project and its children"-table. This makes the vpc-container configuration available to all environments under this project. We need this for the Terraform state.
