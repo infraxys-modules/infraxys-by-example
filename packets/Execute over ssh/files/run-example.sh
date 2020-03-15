@@ -34,13 +34,13 @@ log_info "Executing function 'run_me_on_target' on the example EC2-instance.";
 remote_filename="remote.txt";
 
 execute_function_over_ssh \
-		--hostname "$remote_instance_name" \
-		--function_name run_me_on_target \
-		--transfer_file "$INSTANCE_DIR/my-example.conf" \
-		--transfer_file_remote_path "/tmp/my-example.conf" \
-        --retrieve_file "/tmp/remote_filename" \
-        --retrieve_file_local_path "/tmp/retrieved_file.txt" \
-        --display_message "Hello from ";
+    --hostname "$remote_instance_name" \
+    --function_name run_me_on_target \
+    --transfer_file "$INSTANCE_DIR/my-example.conf" \
+    --transfer_file_remote_path "/tmp/my-example.conf" \
+    --retrieve_file "/tmp/$remote_filename" \
+    --retrieve_file_local_path "/tmp/retrieved_file.txt" \
+    --display_message "Hello from ";
         
 log_info "Back from remote execution. Retrieved file contains:";
 cat "/tmp/retrieved_file.txt";
