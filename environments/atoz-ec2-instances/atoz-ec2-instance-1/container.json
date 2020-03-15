@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "description": "First EC2 instance for the AtoZ examples",
+  "name": "atoz-ec2-instance-1",
+  "guid": "03bcd9a3-2b17-4d87-9e4f-be2e1c84b20a",
+  "roles": [
+    {
+      "roleGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\aws-example-config"
+    }
+  ],
+  "instances": [
+    {
+      "guid": "f1ee2d6a-62c5-44e2-a4df-3aee9cf9088d",
+      "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform aws runner",
+      "velocityName": "",
+      "instanceGroups": "",
+      "aws_provider_version": "2.53.0",
+      "aws_region": "$container.getAttribute(\"aws_vpc_region\")",
+      "extra_terraform": "",
+      "instance_label": "atoz-ec2-instance-1",
+      "skip_terraform_action_creation": "1",
+      "state_velocity_names": "terraformVpcState",
+      "instances": [
+        {
+          "guid": "ccb8c948-5d7f-4ef1-ab6c-6fa853ab7e2d",
+          "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform s3 remote state",
+          "velocityName": "",
+          "instanceGroups": "",
+          "state_aws_region": "$instance.parent.getAttribute(\"aws_region\")",
+          "state_encrypt_file": "1",
+          "state_key": "$container.getAttribute(\"aws_core_s3_state_folder\")/${container.name}.tfstate",
+          "state_name": "$container.name",
+          "state_profile": "",
+          "state_s3_bucket": "$container.getAttribute(\"aws_core_s3_state_bucket\")"
+        },
+        {
+          "guid": "77d08791-efe1-4d7c-a773-19aa74e82ece",
+          "packetGuid": "github.com\\infraxys-aws\\aws-ec2\\master\\ec2 instance",
+          "velocityName": "atozInstance1",
+          "instanceGroups": "",
+          "associate_public_ip_address": "0",
+          "image_id": "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-202*",
+          "image_owners": "099720109477",
+          "instance_name": "atoz-instance-1",
+          "instance_subnet_id": "data.terraform_remote_state.vpc.outputs.private_subnets[0]",
+          "instance_tags": "$container.getAttribute(\"aws_core_tag_list\").replaceAll(\"\u003cname\u003e\", \"$instance.getAttribute(\u0027instance_name\u0027)\")",
+          "instance_type": "t2.micro",
+          "key_pair_name": "infraxys-by-example",
+          "prevent_destroy": "0",
+          "private_key_file": "~/.ssh/keys/${instance.getAttribute(\"key_pair_name\").replaceAll(\"-\", \"_\")}.pem",
+          "root_block_device_del_on_term": "1",
+          "root_block_device_size": "20",
+          "root_block_device_type": "gp2",
+          "ssh_connect_username": "ubuntu",
+          "user_data_script": "",
+          "vpc_velocity_name": "vpc",
+          "instances": [
+            {
+              "guid": "fc3761cd-05d8-4364-a641-d312c09d307c",
+              "packetGuid": "github.com\\infraxys-aws\\aws-ec2\\master\\security group",
+              "velocityName": "",
+              "instanceGroups": "",
+              "description": "Security group for the first a-to-z instance",
+              "egress_rules": "#outbound internet access\negress {\nfrom_port   \u003d 0\nto_port     \u003d 0\nprotocol    \u003d \"-1\"\ncidr_blocks \u003d [\"0.0.0.0/0\"]\n}",
+              "extra_terraform": "",
+              "ingress_rules": "ingress {\n    security_groups \u003d [data.terraform_remote_state.vpc.outputs.bastion-sg_id]\n    protocol \u003d \"tcp\"\n    from_port \u003d 22\n    to_port \u003d 22\n}",
+              "security_group_name": "${container.name}-sg",
+              "tags": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

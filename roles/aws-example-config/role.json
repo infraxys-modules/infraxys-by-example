@@ -7,7 +7,6 @@
   "instances": [
     {
       "guid": "0c32acc9-33b1-4ca6-8709-3ed317e92cba",
-      "parentGuid": "",
       "packetGuid": "github.com\\infraxys-aws\\aws-commons\\master\\aws core terraform bucket",
       "velocityName": "tfStateBucket",
       "instanceGroups": "",
@@ -17,7 +16,6 @@
     },
     {
       "guid": "5609336a-40ca-4380-891f-690753f5b7f1",
-      "parentGuid": "",
       "packetGuid": "github.com\\infraxys-aws\\aws-commons\\master\\aws core variables",
       "velocityName": "",
       "instanceGroups": "",
@@ -29,7 +27,6 @@
       "instances": [
         {
           "guid": "d4336777-e386-401d-abb3-cbda1c4b43d4",
-          "parentGuid": "5609336a-40ca-4380-891f-690753f5b7f1",
           "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws vpc variables",
           "velocityName": "",
           "instanceGroups": "",
@@ -44,11 +41,11 @@
           "instances": [
             {
               "guid": "bf1dc18b-f3ec-47e0-b4ab-94878b4fa6f8",
-              "parentGuid": "d4336777-e386-401d-abb3-cbda1c4b43d4",
               "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws bastion variables",
               "velocityName": "",
               "instanceGroups": "",
-              "aws_vpc_bastion_image_id": "ami-0de53d8956e8dcf80",
+              "aws_vpc_bastion_image_id": "amzn2-ami-hvm-2.0.202*",
+              "aws_vpc_bastion_image_owners": "amazon",
               "aws_vpc_bastion_key_pair_name": "infraxys-by-example",
               "aws_vpc_bastion_name": "$instance.getAttribute(\"aws_vpc_name_prefix\")-bastion",
               "aws_vpc_bastion_private_key_file": "/root/.ssh/keys/$instance.getAttribute(\"aws_vpc_bastion_key_pair_name\")",

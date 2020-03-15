@@ -17,6 +17,7 @@ This section will be updated regularly with more-and-more practical examples. We
 1. [Inheriting files and optional action generation](modules/infraxys-a-to-z/03-inheriting-files-and-conditional-actions/README.md)
 1. [Create a role](modules/infraxys-a-to-z/04-create-role/README.md)
 1. [Create a VPC in AWS](modules/infraxys-a-to-z/05-aws-vpc/README.md)
+1. [Create an EC2 instance in AWS](modules/infraxys-a-to-z/06-aws-ec2-instance/README.md)
 
 ### Variables
 

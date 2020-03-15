@@ -1,4 +1,4 @@
-# Infraxys A to Z: 04 - Create a VPC in AWS
+# Infraxys A to Z: 05 - Create a VPC in AWS
 
 For the coming examples, we'll need a VPC prepared.
 
