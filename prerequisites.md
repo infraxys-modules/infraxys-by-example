@@ -7,15 +7,16 @@ The examples assume that you will follow them step-by-step. If this is the case,
 
 Most examples assume that the following configuration is already in place.
 
-## Infraxys container setup
-- Create project "infraxys-by-example" underneath a project of your choice.
-- Create environment "examples" under this project.
-- Create container "examples" with description "infraxys-by-example" under this environment.
-
 ## GitHub module repository setup
 
 If you want to perform the steps from the examples yourself, then you need to create a module in GitHub.
 See <a href="https://infraxys.io/topics/using-modules/" target="_blank">Infraxys modules</a> on how to setup your module repository.
+
+### Infraxys container setup
+- Create environment "examples" under the "Environments"-node of your module.
+- Create container "examples" in the containers-tab of the details view for the environment. Use description "infraxys-by-example".
+- In the project-tree on the left, create project "infraxys-by-example" underneath a project of your choice.
+- Drag the "examples" environment and drop it on this project. 
 
 ## Setup this infraxys-by-example module
 
