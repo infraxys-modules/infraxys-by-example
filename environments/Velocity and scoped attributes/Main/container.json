@@ -1,53 +1,99 @@
 {
   "version": "1.0",
-  "description": "Main container",
-  "name": "Main",
-  "guid": "275e0251-8c76-44ec-b31f-ada1717ffb56",
+  "id": "275e0251-8c76-44ec-b31f-ada1717ffb56",
   "roles": [],
   "instances": [
     {
-      "guid": "dfdab610-6013-442a-b68e-b62103185a43",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\instance scoped attribute",
+      "id": "bcae7ccd-33f9-413f-9379-1e06e974aa67",
+      "packetId": "c19bd399-67f0-47a6-97e2-55a0928a3164",
+      "packetName": "Container scoped attribute",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "instance_message": "Instance scoped message",
-      "instances": [
+      "attributes": [
         {
-          "guid": "c14f8549-23ea-4220-bfeb-2da6b48bb554",
-          "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
-          "velocityName": "",
-          "instanceGroups": "",
-          "display_message": "$instance.parent.getAttribute(\"instance_message\")"
+          "id": "ccbda475-fdb2-48b3-86c0-e7823bf80108",
+          "name": "container_message",
+          "value": "Container scoped message"
         }
       ]
     },
     {
-      "guid": "e66d3e81-d56e-48a0-b1e5-d01c8c8a1dd6",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "id": "dfdab610-6013-442a-b68e-b62103185a43",
+      "packetId": "996c81fe-4fc9-4f6e-89a0-b78adfc00ca7",
+      "packetName": "Instance scoped attribute",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "display_message": "$instanceScopyVelocityName.getAttribute(\"instance_message\")"
+      "attributes": [
+        {
+          "id": "0b110c1d-f6d3-4807-9f3d-c7ddafc1b061",
+          "name": "instance_message",
+          "value": "Instance scoped message"
+        }
+      ],
+      "instances": [
+        {
+          "id": "c14f8549-23ea-4220-bfeb-2da6b48bb554",
+          "packetId": "2daecc19-6e25-42bf-8464-150199f21d3e",
+          "packetName": "Velocity example",
+          "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
+          "velocityName": "",
+          "instanceGroups": "",
+          "attributes": [
+            {
+              "id": "b4235a49-54a1-4310-a99b-1efadf4e26cd",
+              "name": "display_message",
+              "value": "$instance.parent.getAttribute(\"instance_message\")"
+            }
+          ]
+        }
+      ]
     },
     {
-      "guid": "da18b6ec-53dd-48d6-87ab-5c50c921c398",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "id": "2638662a-cab8-40ae-9d1f-59bb2ec28c9e",
+      "packetId": "2daecc19-6e25-42bf-8464-150199f21d3e",
+      "packetName": "Velocity example",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "display_message": "$environment.getAttribute(\"environment_message\")"
+      "attributes": [
+        {
+          "id": "b4235a49-54a1-4310-a99b-1efadf4e26cd",
+          "name": "display_message",
+          "value": "$container.getAttribute(\"container_message\")"
+        }
+      ]
     },
     {
-      "guid": "bcae7ccd-33f9-413f-9379-1e06e974aa67",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\container scoped attribute",
+      "id": "da18b6ec-53dd-48d6-87ab-5c50c921c398",
+      "packetId": "2daecc19-6e25-42bf-8464-150199f21d3e",
+      "packetName": "Velocity example",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "container_message": "Container scoped message"
+      "attributes": [
+        {
+          "id": "b4235a49-54a1-4310-a99b-1efadf4e26cd",
+          "name": "display_message",
+          "value": "$environment.getAttribute(\"environment_message\")"
+        }
+      ]
     },
     {
-      "guid": "2638662a-cab8-40ae-9d1f-59bb2ec28c9e",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "id": "e66d3e81-d56e-48a0-b1e5-d01c8c8a1dd6",
+      "packetId": "2daecc19-6e25-42bf-8464-150199f21d3e",
+      "packetName": "Velocity example",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "display_message": "$container.getAttribute(\"container_message\")"
+      "attributes": [
+        {
+          "id": "b4235a49-54a1-4310-a99b-1efadf4e26cd",
+          "name": "display_message",
+          "value": "$instanceScopyVelocityName.getAttribute(\"instance_message\")"
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "071239db-a268-4f19-99db-b63a467f0026",
   "label": "%instance_label%",
   "type": "",
   "autoExpand": false,
@@ -10,6 +11,7 @@
   "infoHtml": "",
   "attributes": [
     {
+      "id": "1a44bcda-cbdd-4f0d-9861-6050319e737e",
       "name": "instance_label",
       "caption": "Instance label",
       "type": "java.lang.String",
@@ -23,7 +25,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -35,7 +37,7 @@
   ],
   "files": [
     {
-      "guid": "b2159a97-e675-4448-9ce4-942299edd685",
+      "id": "b2159a97-e675-4448-9ce4-942299edd685",
       "filename": "rest_python1.py",
       "includeName": "",
       "menuCaption": "REST Python 1",

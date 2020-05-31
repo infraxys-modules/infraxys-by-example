@@ -1,16 +1,17 @@
 {
   "version": "1.0",
+  "id": "2daecc19-6e25-42bf-8464-150199f21d3e",
   "label": "Message: %display_message%",
   "type": "",
   "autoExpand": false,
   "skipEveryInstanceFiles": false,
   "limitToAllowedChildren": false,
   "autoGenerate": false,
-  "inheritFilesFromPacketGuid": "",
   "key": "",
   "infoHtml": "\u003ch2\u003eDisplay message\u003c/h2\u003e\u003cp\u003e\u003ca target\u003d\"_blank\" href\u003d\"https://github.com/infraxys-modules/infraxys-by-example/modules/infraxys-a-to-z/01-hello-world/README.md\"\u003eOpen the instructions\u003c/a\u003e\u003c/p\u003e",
   "attributes": [
     {
+      "id": "b4235a49-54a1-4310-a99b-1efadf4e26cd",
       "name": "display_message",
       "caption": "Display message",
       "type": "java.lang.String",
@@ -21,9 +22,10 @@
       "required": true,
       "isPartOfKey": false,
       "listOfValues": "",
+      "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -35,7 +37,7 @@
   ],
   "files": [
     {
-      "guid": "ac755e01-bf49-4a9e-b32d-864827296d4b",
+      "id": "ac755e01-bf49-4a9e-b32d-864827296d4b",
       "filename": "display-message.sh",
       "menuCaption": "Display message",
       "directory": "",
@@ -58,7 +60,7 @@
       "customCommand": ""
     },
     {
-      "guid": "e3eb4934-6ae8-430a-ac93-011f3d6a2b0e",
+      "id": "e3eb4934-6ae8-430a-ac93-011f3d6a2b0e",
       "filename": "display-popup.sh",
       "includeName": "",
       "menuCaption": "Display popup",

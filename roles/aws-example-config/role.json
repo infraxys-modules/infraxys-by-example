@@ -1,56 +1,166 @@
 {
   "version": "1.0",
-  "description": "Shared AWS configuration for vpc-example",
-  "name": "aws-example-config",
-  "group": "",
-  "requiredPackets": [],
+  "id": "e25dee6a-a7bd-4e5c-aca8-bde80798a2a1",
   "instances": [
     {
-      "guid": "0c32acc9-33b1-4ca6-8709-3ed317e92cba",
-      "packetGuid": "github.com\\infraxys-aws\\aws-commons\\master\\aws core terraform bucket",
+      "id": "0c32acc9-33b1-4ca6-8709-3ed317e92cba",
+      "packetId": "954e1c27-df9f-4796-8b6b-a422aba7dd81",
+      "packetName": "AWS core terraform bucket",
+      "packetPath": "github.com\\infraxys-aws\\aws-commons\\master",
       "velocityName": "tfStateBucket",
       "instanceGroups": "",
-      "aws_core_s3_state_bucket": "infraxys-by-example-state",
-      "aws_core_s3_state_folder": "${container.name}-state",
-      "aws_core_s3_state_region": "eu-west-1"
+      "attributes": [
+        {
+          "id": "efcf6142-d8a4-491f-961b-efb99f705add",
+          "name": "aws_core_s3_state_bucket",
+          "value": "infraxys-by-example-state"
+        },
+        {
+          "id": "d182fead-fe6c-483c-bd62-af10ae64feb6",
+          "name": "aws_core_s3_state_folder",
+          "value": "${container.name}-state"
+        },
+        {
+          "id": "9dce0557-b5aa-4c38-83cc-a8655f584778",
+          "name": "aws_core_s3_state_region",
+          "value": "eu-west-1"
+        }
+      ]
     },
     {
-      "guid": "5609336a-40ca-4380-891f-690753f5b7f1",
-      "packetGuid": "github.com\\infraxys-aws\\aws-commons\\master\\aws core variables",
+      "id": "5609336a-40ca-4380-891f-690753f5b7f1",
+      "packetId": "b98840cf-2cfd-4889-8fbd-91df1f08c681",
+      "packetName": "AWS core variables",
+      "packetPath": "github.com\\infraxys-aws\\aws-commons\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "aws_core_credentials_default_profile_or_role": "infraxys-dev-admin",
-      "aws_core_environment_name": "$environment.name",
-      "aws_core_propagated_tag_list": "  {\n    key \u003d \"Name\"\n    value  \u003d \"\u003cname\u003e\"\n    propagate_at_launch \u003d true\n  },\n  {\n    key \u003d \"Environment\"\n    value  \u003d \"$instance.getAttribute(\"aws_core_environment_name\")\"\n    propagate_at_launch \u003d true\n  }",
-      "aws_core_region": "eu-west-1",
-      "aws_core_tag_list": "    Environment \u003d \"$instance.getAttribute(\"aws_core_environment_name\")\",\n    Name        \u003d \"\u003cname\u003e\"",
+      "attributes": [
+        {
+          "id": "d11ecbca-0f2d-4229-adb8-37f9a4f5153b",
+          "name": "aws_core_credentials_default_profile_or_role",
+          "value": "infraxys-dev-admin"
+        },
+        {
+          "id": "ade13afd-fb45-47fe-8f26-e52dbab6509a",
+          "name": "aws_core_environment_name",
+          "value": "$environment.name"
+        },
+        {
+          "id": "31c01ad3-aaa8-4335-931f-64380f6c8d5a",
+          "name": "aws_core_propagated_tag_list",
+          "value": "  {\n    key \u003d \"Name\"\n    value  \u003d \"\u003cname\u003e\"\n    propagate_at_launch \u003d true\n  },\n  {\n    key \u003d \"Environment\"\n    value  \u003d \"$instance.getAttribute(\"aws_core_environment_name\")\"\n    propagate_at_launch \u003d true\n  }"
+        },
+        {
+          "id": "07dd545e-6fee-4179-811a-60b22d8e2a21",
+          "name": "aws_core_region",
+          "value": "eu-west-1"
+        },
+        {
+          "id": "8e5a4e72-ccce-45af-a8d9-7e3a681f80cd",
+          "name": "aws_core_tag_list",
+          "value": "    Environment \u003d \"$instance.getAttribute(\"aws_core_environment_name\")\",\n    Name        \u003d \"\u003cname\u003e\""
+        },
+        {
+          "id": "d659aa1c-35d9-4123-b50d-7c2b86d35c6f",
+          "name": "aws_core_vault_config_variable",
+          "value": ""
+        }
+      ],
       "instances": [
         {
-          "guid": "d4336777-e386-401d-abb3-cbda1c4b43d4",
-          "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws vpc variables",
+          "id": "d4336777-e386-401d-abb3-cbda1c4b43d4",
+          "packetId": "38f9a32a-033f-4d96-85e0-0d4cd664a55f",
+          "packetName": "AWS VPC variables",
+          "packetPath": "github.com\\infraxys-aws\\aws-vpc\\master",
           "velocityName": "",
           "instanceGroups": "",
-          "aws_vpc_app_cidr_blocks": "        \"1.1.1.1/32\", # Place 1\n        \"2.2.2.2/32\" # Place 2",
-          "aws_vpc_az_count": "2",
-          "aws_vpc_cidr": "10.0.0.0/20",
-          "aws_vpc_name": "$instance.getAttribute(\"aws_vpc_name_prefix\")-vpc",
-          "aws_vpc_name_prefix": "vpc-example",
-          "aws_vpc_nat_scenario": "One NAT per availability zone",
-          "aws_vpc_region": "$instance.parent.getAttribute(\"aws_core_region\")",
-          "aws_vpc_terraform_version": "0.11.11",
+          "attributes": [
+            {
+              "id": "72192d96-0de2-4714-99f9-f4a4d77bf52c",
+              "name": "aws_vpc_app_cidr_blocks",
+              "value": "        \"1.1.1.1/32\", # Place 1\n        \"2.2.2.2/32\" # Place 2"
+            },
+            {
+              "id": "c0a2424d-5f50-4766-8ac0-47d4b6fe9a2e",
+              "name": "aws_vpc_az_count",
+              "value": "2"
+            },
+            {
+              "id": "a7a8cf07-e145-46ae-a882-c0b8d851b940",
+              "name": "aws_vpc_cidr",
+              "value": "10.0.0.0/20"
+            },
+            {
+              "id": "267c074a-b1e4-488c-9b57-a728c02cf5ec",
+              "name": "aws_vpc_name",
+              "value": "$instance.getAttribute(\"aws_vpc_name_prefix\")-vpc"
+            },
+            {
+              "id": "94ede95c-f9f6-4253-ac80-fee188807a39",
+              "name": "aws_vpc_name_prefix",
+              "value": "vpc-example"
+            },
+            {
+              "id": "8a335629-a9dd-450a-a8aa-4c02ec513a08",
+              "name": "aws_vpc_nat_scenario",
+              "value": "One NAT per availability zone"
+            },
+            {
+              "id": "05443759-54c0-4f17-817a-f159c8b31ee1",
+              "name": "aws_vpc_region",
+              "value": "$instance.parent.getAttribute(\"aws_core_region\")"
+            },
+            {
+              "id": "5bf2b0c2-431a-42d8-8a16-d74329a01522",
+              "name": "aws_vpc_terraform_version",
+              "value": "0.11.11"
+            }
+          ],
           "instances": [
             {
-              "guid": "bf1dc18b-f3ec-47e0-b4ab-94878b4fa6f8",
-              "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws bastion variables",
+              "id": "bf1dc18b-f3ec-47e0-b4ab-94878b4fa6f8",
+              "packetId": "f7fef303-ee9c-4427-87e0-23fc8b2d0e7e",
+              "packetName": "AWS bastion variables",
+              "packetPath": "github.com\\infraxys-aws\\aws-vpc\\master",
               "velocityName": "",
               "instanceGroups": "",
-              "aws_vpc_bastion_image_id": "amzn2-ami-hvm-2.0.202*",
-              "aws_vpc_bastion_image_owners": "amazon",
-              "aws_vpc_bastion_key_pair_name": "infraxys-by-example",
-              "aws_vpc_bastion_name": "$instance.getAttribute(\"aws_vpc_name_prefix\")-bastion",
-              "aws_vpc_bastion_private_key_file": "/root/.ssh/keys/$instance.getAttribute(\"aws_vpc_bastion_key_pair_name\")",
-              "aws_vpc_bastion_ssh_cidr_blocks": "        \"34.99.148.44/32\"",
-              "aws_vpc_bastion_username": "ec2-user"
+              "attributes": [
+                {
+                  "id": "e0eae504-57f2-41b3-a441-3e97b427cbc0",
+                  "name": "aws_vpc_bastion_image_id",
+                  "value": "amzn2-ami-hvm-2.0.202*"
+                },
+                {
+                  "id": "9ad11ee7-cca4-42da-b2fb-1373744f4116",
+                  "name": "aws_vpc_bastion_image_owners",
+                  "value": "amazon"
+                },
+                {
+                  "id": "859cf668-a426-4948-a663-11c85a6a3f14",
+                  "name": "aws_vpc_bastion_key_pair_name",
+                  "value": "infraxys-by-example"
+                },
+                {
+                  "id": "59d2ffcb-0010-45f0-a877-295746d5149c",
+                  "name": "aws_vpc_bastion_name",
+                  "value": "$instance.getAttribute(\"aws_vpc_name_prefix\")-bastion"
+                },
+                {
+                  "id": "102f5628-7f12-4695-8da6-c64966b0bc1a",
+                  "name": "aws_vpc_bastion_private_key_file",
+                  "value": "/root/.ssh/keys/$instance.getAttribute(\"aws_vpc_bastion_key_pair_name\")"
+                },
+                {
+                  "id": "2095f5e3-56de-4fe7-9947-85277d0bea55",
+                  "name": "aws_vpc_bastion_ssh_cidr_blocks",
+                  "value": "        \"34.99.148.44/32\""
+                },
+                {
+                  "id": "50df6c98-a034-4c59-9614-0d6e3841b6d6",
+                  "name": "aws_vpc_bastion_username",
+                  "value": "ec2-user"
+                }
+              ]
             }
           ]
         }

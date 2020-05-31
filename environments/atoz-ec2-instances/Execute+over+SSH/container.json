@@ -1,15 +1,22 @@
 {
   "version": "1.0",
-  "description": "Execute over SSH example",
-  "name": "Execute over SSH",
-  "guid": "dcfbe1ec-4ab0-4b53-8084-4226bab63b91",
-  "roles": [],
+  "id": "dcfbe1ec-4ab0-4b53-8084-4226bab63b91",
+  "roles": [
+    {
+      "name": "aws-example-config",
+      "id": "e25dee6a-a7bd-4e5c-aca8-bde80798a2a1",
+      "path": "github.com\\infraxys-modules\\infraxys-by-example\\master"
+    }
+  ],
   "instances": [
     {
-      "guid": "30411c30-dfa2-4243-a82a-f9446b83cdcf",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\execute over ssh",
+      "id": "30411c30-dfa2-4243-a82a-f9446b83cdcf",
+      "packetId": "9448d341-7925-499a-a389-b356dd8aa222",
+      "packetName": "Execute over ssh",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
-      "instanceGroups": ""
+      "instanceGroups": "",
+      "attributes": []
     }
   ]
 }

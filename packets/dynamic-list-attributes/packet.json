@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "bf3398f4-07b0-4a23-9a88-39aa18ed23b8",
   "label": "Dynamic list attributes",
   "type": "",
   "autoExpand": false,
@@ -10,6 +11,7 @@
   "infoHtml": "",
   "attributes": [
     {
+      "id": "49802c1d-a33c-42a3-adad-d51cd6eb78a5",
       "name": "docker_attribute",
       "caption": "Docker attribute",
       "type": "java.lang.String",
@@ -24,17 +26,17 @@
       "source": "DOCKER RUN",
       "referenceFilter": "quay.io/jeroenmanders/aws-core-attribute-regions:1.0",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "tooltip": "",
       "scope": "Instance",
       "defaultValue": ""
     },
     {
+      "id": "cb963a76-449e-4593-981f-3f0c8f4919f2",
       "name": "ec2_regions",
       "caption": "EC2 regions",
       "type": "java.lang.String",
@@ -49,11 +51,10 @@
       "source": "SCRIPT OUTPUT",
       "referenceFilter": "get_ec2_regions.sh",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "tooltip": "",
       "scope": "Instance",
@@ -62,7 +63,7 @@
   ],
   "files": [
     {
-      "guid": "537c26c9-3617-4c1d-a71a-ff72cd38567e",
+      "id": "537c26c9-3617-4c1d-a71a-ff72cd38567e",
       "filename": "get_ec2_regions.sh",
       "includeName": "",
       "menuCaption": "get_ec2_regions.sh",

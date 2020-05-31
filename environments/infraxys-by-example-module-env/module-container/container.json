@@ -1,27 +1,57 @@
 {
   "version": "1.0",
-  "description": "Container under a module-environment",
-  "name": "module-container",
-  "guid": "66e6d703-32ce-4a39-9b7a-76a2d3173ab8",
+  "id": "66e6d703-32ce-4a39-9b7a-76a2d3173ab8",
   "roles": [],
   "instances": [
     {
-      "guid": "bffca934-d0fb-4ff8-95a0-4a5c9dfa4c0a",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\infraxys rest calls",
+      "id": "1063a6ab-6c22-4df0-9a44-ecdbe375c9a7",
+      "packetId": "bf3398f4-07b0-4a23-9a88-39aa18ed23b8",
+      "packetName": "dynamic-list-attributes",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "instance_label": "Infraxys REST example",
-      "json": "{}",
-      "request_method": "GET",
-      "request_path": "environments/master/execute"
+      "attributes": [
+        {
+          "id": "49802c1d-a33c-42a3-adad-d51cd6eb78a5",
+          "name": "docker_attribute",
+          "value": "eu-west-3"
+        },
+        {
+          "id": "cb963a76-449e-4593-981f-3f0c8f4919f2",
+          "name": "ec2_regions",
+          "value": "eu-west-2"
+        }
+      ]
     },
     {
-      "guid": "1063a6ab-6c22-4df0-9a44-ecdbe375c9a7",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\dynamic-list-attributes",
+      "id": "bffca934-d0fb-4ff8-95a0-4a5c9dfa4c0a",
+      "packetId": "ffb41bcc-20ac-4cb2-8f40-2839a6111d2e",
+      "packetName": "Infraxys REST calls",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "docker_attribute": "eu-west-3",
-      "ec2_regions": "eu-west-2"
+      "attributes": [
+        {
+          "id": "6306c5e9-3bec-44f5-b890-7409319a6049",
+          "name": "instance_label",
+          "value": "Infraxys REST example"
+        },
+        {
+          "id": "5a073eae-d031-4804-855a-f77d96e42aa8",
+          "name": "json",
+          "value": "{}"
+        },
+        {
+          "id": "423499ef-aa08-4451-9564-62a9c2902914",
+          "name": "request_method",
+          "value": "GET"
+        },
+        {
+          "id": "23817288-c793-4f49-9d94-656acdf45567",
+          "name": "request_path",
+          "value": "environments/master/execute"
+        }
+      ]
     }
   ]
 }

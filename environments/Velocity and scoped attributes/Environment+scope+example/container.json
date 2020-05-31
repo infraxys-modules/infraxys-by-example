@@ -1,23 +1,37 @@
 {
   "version": "1.0",
-  "description": "Environment scope container",
-  "name": "Environment scope example",
-  "guid": "8da657d1-6e88-4c06-aa6f-bc4735457b18",
+  "id": "8da657d1-6e88-4c06-aa6f-bc4735457b18",
   "roles": [],
   "instances": [
     {
-      "guid": "4b4f3ecd-bd21-42a5-b391-298492174a82",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\environment scoped attribute",
+      "id": "4b4f3ecd-bd21-42a5-b391-298492174a82",
+      "packetId": "c711f4b9-3ef1-495f-901a-f5aa00868f22",
+      "packetName": "Environment scoped attribute",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "environment_message": "Environment scope"
+      "attributes": [
+        {
+          "id": "f0defe0f-7c46-4c58-9c74-21c32dcaf082",
+          "name": "environment_message",
+          "value": "Environment scope"
+        }
+      ]
     },
     {
-      "guid": "18eec92b-28c2-4c55-b3a8-48695881b22f",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\instance scoped attribute",
+      "id": "18eec92b-28c2-4c55-b3a8-48695881b22f",
+      "packetId": "996c81fe-4fc9-4f6e-89a0-b78adfc00ca7",
+      "packetName": "Instance scoped attribute",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "instanceScopyVelocityName",
       "instanceGroups": "",
-      "instance_message": "Instance scope notification with velocity name"
+      "attributes": [
+        {
+          "id": "0b110c1d-f6d3-4807-9f3d-c7ddafc1b061",
+          "name": "instance_message",
+          "value": "Instance scope notification with velocity name"
+        }
+      ]
     }
   ]
 }

@@ -1,20 +1,28 @@
 {
   "version": "1.0",
-  "description": "Inherit role example",
-  "name": "test-role-with-container-scoped-attribute",
-  "guid": "51a5f0ad-4f90-4d26-9757-0f1f6a698a53",
+  "id": "51a5f0ad-4f90-4d26-9757-0f1f6a698a53",
   "roles": [
     {
-      "roleGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\role-with-container-scoped-attribute"
+      "name": "role-with-container-scoped-attribute",
+      "id": "83a80024-b177-49c6-beb0-531d9dad9c51",
+      "path": "github.com\\infraxys-modules\\infraxys-by-example\\master"
     }
   ],
   "instances": [
     {
-      "guid": "e3c1fb12-5db4-423f-a365-5fec1ccbe4d7",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\velocity example",
+      "id": "e3c1fb12-5db4-423f-a365-5fec1ccbe4d7",
+      "packetId": "2daecc19-6e25-42bf-8464-150199f21d3e",
+      "packetName": "Velocity example",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "display_message": "$container.getAttribute(\"container_message\")"
+      "attributes": [
+        {
+          "id": "b4235a49-54a1-4310-a99b-1efadf4e26cd",
+          "name": "display_message",
+          "value": "$container.getAttribute(\"container_message\")"
+        }
+      ]
     }
   ]
 }

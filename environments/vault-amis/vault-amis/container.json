@@ -1,81 +1,260 @@
 {
   "version": "1.0",
-  "description": "AMIs for Vault and Consul",
-  "name": "vault-amis",
-  "guid": "de1dc819-cdba-466a-9e49-9420e1660a70",
+  "id": "de1dc819-cdba-466a-9e49-9420e1660a70",
   "roles": [
     {
-      "roleGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\aws-example-config"
+      "name": "aws-example-config",
+      "id": "e25dee6a-a7bd-4e5c-aca8-bde80798a2a1",
+      "path": "github.com\\infraxys-modules\\infraxys-by-example\\master"
     }
   ],
   "instances": [
     {
-      "guid": "d0ba7192-628f-4ed5-aa9c-4e50f92a1075",
-      "parentGuid": "",
-      "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform aws runner",
+      "id": "a3b209e1-40e7-45e7-b884-6c74892e1bf0",
+      "packetId": "716c6f36-3ba6-4574-98d4-862b171615ea",
+      "packetName": "Packer AWS build environment",
+      "packetPath": "github.com\\infraxys-aws\\aws-packer\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "aws_provider_version": "~\u003e 2.32.0",
-      "aws_region": "$terraformVpcState.getAttribute(\"aws_region\")",
-      "extra_terraform": "",
-      "instance_label": "Packer Terraform state",
-      "skip_terraform_action_creation": "1",
-      "state_velocity_names": "terraformVpcState",
+      "attributes": [
+        {
+          "id": "88da52d5-cbb9-4572-8221-ef726993003b",
+          "name": "aws_region",
+          "value": "$container.getAttribute(\"aws_core_region\")"
+        },
+        {
+          "id": "014b97a8-eb4f-4e2b-92f8-9559463fdd0e",
+          "name": "bastion_name",
+          "value": "$bastionHost.getAttribute(\"bastion_name\")-asg"
+        },
+        {
+          "id": "28f513de-95f1-45f0-aa90-8c57077a54ad",
+          "name": "security_group_name",
+          "value": "$packerSg.getAttribute(\"security_group_name\")"
+        },
+        {
+          "id": "c61512d8-13cc-4ec3-ba38-f3210226df0c",
+          "name": "ssh_bastion_private_key_file",
+          "value": "$bastionHost.getAttribute(\"private_key_file\")"
+        },
+        {
+          "id": "528f5170-84af-46df-953e-377fe1d2848c",
+          "name": "ssh_bastion_username",
+          "value": "$bastionHost.getAttribute(\"ssh_username\")"
+        },
+        {
+          "id": "72bdd79a-ccbb-43cf-a9d0-f8e437e3869f",
+          "name": "subnet_name",
+          "value": "$vpc.getAttribute(\"vpc_name_prefix\")-private-sn"
+        },
+        {
+          "id": "343bf903-0d02-4e3f-88f8-7166cd03f894",
+          "name": "vpc_name",
+          "value": "$vpc.getAttribute(\"vpc_name\")"
+        },
+        {
+          "id": "2779001c-58aa-4288-873b-fb65f77784d8",
+          "name": "vault_config_variable",
+          "value": ""
+        }
+      ],
       "instances": [
         {
-          "guid": "486cae1f-1fcb-4997-bbdc-e2a1f96d1e6e",
-          "parentGuid": "d0ba7192-628f-4ed5-aa9c-4e50f92a1075",
-          "packetGuid": "github.com\\infraxys-aws\\aws-ec2\\master\\security group",
-          "velocityName": "packerSg",
+          "id": "93f24ae9-8d99-491d-8020-8f836c23f12d",
+          "packetId": "d92333c4-85f7-4661-8b10-fc4c478ac47a",
+          "packetName": "Packer AWS Ubuntu",
+          "packetPath": "github.com\\infraxys-aws\\aws-packer-ubuntu\\ubuntu-18.04",
+          "velocityName": "",
           "instanceGroups": "",
-          "description": "Security group  to access Packer instances through the bastion host",
-          "egress_rules": "  egress {\n    protocol \u003d -1\n    from_port \u003d 0\n    to_port \u003d 0\n    cidr_blocks \u003d [\n      \"0.0.0.0/0\"\n    ]\n  }",
-          "extra_terraform": "",
-          "ingress_rules": "  ingress {\n    protocol    \u003d \"tcp\"\n    from_port   \u003d 22\n    to_port     \u003d 22\n    security_groups \u003d [data.terraform_remote_state.vpc.outputs.${bastionSg.getAttribute(\"security_group_name\")}_id]\n  }",
-          "security_group_name": "packer-sg",
-          "tags": "\"Name\": \"packer-sg\""
+          "attributes": [
+            {
+              "id": "12f30e4f-3c1d-4cf5-a182-4fa730ded2b7",
+              "name": "ami_description",
+              "value": "Docker 18.06 on Ubuntu 18.04 AMI"
+            },
+            {
+              "id": "c79b9eb9-c745-4836-8e9b-5f15233c8eae",
+              "name": "ami_name_prefix",
+              "value": "ubuntu-18.04"
+            },
+            {
+              "id": "d49014e1-6018-4d94-bdc4-88206fd6a0ef",
+              "name": "associate_public_ip_address",
+              "value": "0"
+            },
+            {
+              "id": "ccf87656-c6e9-44be-a023-82c1e47643a9",
+              "name": "copy_to_aws_regions",
+              "value": "us-east-1"
+            },
+            {
+              "id": "5983ad8e-97c4-402e-8d67-ee59240b2e77",
+              "name": "debug_mode",
+              "value": "0"
+            },
+            {
+              "id": "bc5685fe-7196-4fc7-af97-b22812ad59c7",
+              "name": "do_encrypt_boot",
+              "value": "0"
+            },
+            {
+              "id": "f76ced9b-b632-49af-8cd1-9f30112adfbc",
+              "name": "image_owners",
+              "value": ""
+            },
+            {
+              "id": "4ba5ab29-292f-4438-baff-c78b6e269cf1",
+              "name": "instance_region",
+              "value": "$instance.parent.getAttribute(\"aws_region\")"
+            },
+            {
+              "id": "633aa336-e7ca-415f-821e-73ac0d19def8",
+              "name": "source_ami",
+              "value": "ami-0727f3c2d4b0226d5"
+            }
+          ],
+          "instances": [
+            {
+              "id": "d19ea6a0-0167-4180-9772-6d0b3707c85f",
+              "packetId": "2235e79b-d7fa-4b8e-aceb-0b4408c37be4",
+              "packetName": "Packer AWS Docker",
+              "packetPath": "github.com\\infraxys-aws\\aws-packer-docker\\docker-18.06-ubuntu-18.04",
+              "velocityName": "",
+              "instanceGroups": "",
+              "attributes": [
+                {
+                  "id": "e8ed3168-075f-4006-8432-9e21d70969ef",
+                  "name": "ami_description",
+                  "value": "Docker 18.06 on Ubuntu AMI"
+                },
+                {
+                  "id": "a08d1f01-8bc7-4ab9-b5d5-d98b9ac947c6",
+                  "name": "ami_name_prefix",
+                  "value": "docker-18.06-on-ubuntu"
+                },
+                {
+                  "id": "266d0e74-c0d7-4cb2-ae2b-ff38cd631a11",
+                  "name": "associate_public_ip_address",
+                  "value": "0"
+                },
+                {
+                  "id": "988d95c1-05ad-4f47-8c41-02a09ebc2581",
+                  "name": "copy_to_aws_regions",
+                  "value": "us-east-1"
+                },
+                {
+                  "id": "c2d7b644-e829-438e-b07c-885d546154a4",
+                  "name": "debug_mode",
+                  "value": "0"
+                },
+                {
+                  "id": "a01e2809-3327-445b-b39a-cf849f0b3a57",
+                  "name": "do_encrypt_boot",
+                  "value": "0"
+                },
+                {
+                  "id": "79285316-c485-42f8-9a3a-5f8fa68ddea6",
+                  "name": "image_owners",
+                  "value": ""
+                },
+                {
+                  "id": "6516b2e4-067b-4a6a-b1b5-5bbb8013ec4b",
+                  "name": "instance_region",
+                  "value": "$instance.parent.getAttribute(\"aws_region\")"
+                },
+                {
+                  "id": "db0c0725-bbf7-4c9d-aac4-66f500778267",
+                  "name": "source_ami",
+                  "value": ""
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "guid": "a3b209e1-40e7-45e7-b884-6c74892e1bf0",
-      "parentGuid": "",
-      "packetGuid": "github.com\\infraxys-aws\\aws-packer\\master\\packer aws build environment",
+      "id": "d0ba7192-628f-4ed5-aa9c-4e50f92a1075",
+      "packetId": "c11f5f24-b10c-489a-8ca2-a953b2acfc63",
+      "packetName": "Terraform AWS runner",
+      "packetPath": "github.com\\infraxys-modules\\terraform\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "aws_region": "$container.getAttribute(\"aws_core_region\")",
-      "bastion_name": "$bastionHost.getAttribute(\"bastion_name\")-asg",
-      "security_group_name": "$packerSg.getAttribute(\"security_group_name\")",
-      "ssh_bastion_private_key_file": "$bastionHost.getAttribute(\"private_key_file\")",
-      "ssh_bastion_username": "$bastionHost.getAttribute(\"ssh_username\")",
-      "subnet_name": "$vpc.getAttribute(\"vpc_name_prefix\")-private-sn",
-      "vpc_name": "$vpc.getAttribute(\"vpc_name\")",
+      "attributes": [
+        {
+          "id": "13ac5f10-a272-42fa-9da3-b5aab7b21c9a",
+          "name": "aws_provider_version",
+          "value": "~\u003e 2.32.0"
+        },
+        {
+          "id": "5d847331-e33c-4c11-888d-115564d96d22",
+          "name": "aws_region",
+          "value": "$terraformVpcState.getAttribute(\"aws_region\")"
+        },
+        {
+          "id": "7f34b229-aacb-4532-89e5-e104fead83b2",
+          "name": "extra_terraform",
+          "value": ""
+        },
+        {
+          "id": "7ee45dcf-ee9b-433c-b046-5ac178df1804",
+          "name": "instance_label",
+          "value": "Packer Terraform state"
+        },
+        {
+          "id": "3bf254f1-3235-4471-ac8a-d11a0a691a34",
+          "name": "skip_terraform_action_creation",
+          "value": "1"
+        },
+        {
+          "id": "4d1e521e-5567-4295-b2ca-90be5f492016",
+          "name": "state_velocity_names",
+          "value": "terraformVpcState"
+        },
+        {
+          "id": "f48b2125-e20f-40dc-84df-98f3681931c8",
+          "name": "terraform_version",
+          "value": "0.12.12"
+        }
+      ],
       "instances": [
         {
-          "guid": "93f24ae9-8d99-491d-8020-8f836c23f12d",
-          "parentGuid": "a3b209e1-40e7-45e7-b884-6c74892e1bf0",
-          "packetGuid": "github.com\\infraxys-aws\\aws-packer-ubuntu\\ubuntu-18.04\\packer aws ubuntu",
-          "velocityName": "",
+          "id": "486cae1f-1fcb-4997-bbdc-e2a1f96d1e6e",
+          "packetId": "07aaa698-bd1c-453f-aad1-eecec4321432",
+          "packetName": "Security group",
+          "packetPath": "github.com\\infraxys-aws\\aws-ec2\\master",
+          "velocityName": "packerSg",
           "instanceGroups": "",
-          "ami_description": "Docker 18.06 on Ubuntu 18.04 AMI",
-          "ami_name_prefix": "ubuntu-18.04",
-          "associate_public_ip_address": "0",
-          "debug_mode": "0",
-          "do_encrypt_boot": "0",
-          "source_ami": "ami-0727f3c2d4b0226d5",
-          "instances": [
+          "attributes": [
             {
-              "guid": "d19ea6a0-0167-4180-9772-6d0b3707c85f",
-              "parentGuid": "93f24ae9-8d99-491d-8020-8f836c23f12d",
-              "packetGuid": "github.com\\infraxys-aws\\aws-packer-docker\\docker-18.06-ubuntu-18.04\\packer aws docker",
-              "velocityName": "",
-              "instanceGroups": "",
-              "ami_description": "Docker 18.06 on Ubuntu AMI",
-              "ami_name_prefix": "docker-18.06-on-ubuntu",
-              "associate_public_ip_address": "0",
-              "debug_mode": "0",
-              "do_encrypt_boot": "0",
-              "source_ami": ""
+              "id": "8233fa49-238b-49c0-8135-0f1b2c876878",
+              "name": "description",
+              "value": "Security group  to access Packer instances through the bastion host"
+            },
+            {
+              "id": "22e4731e-5047-45bf-945f-48e6aea36be0",
+              "name": "egress_rules",
+              "value": "  egress {\n    protocol \u003d -1\n    from_port \u003d 0\n    to_port \u003d 0\n    cidr_blocks \u003d [\n      \"0.0.0.0/0\"\n    ]\n  }"
+            },
+            {
+              "id": "b9e43f2d-442c-42e6-8ec3-e8a7fce2c750",
+              "name": "extra_terraform",
+              "value": ""
+            },
+            {
+              "id": "ba9a9e6a-f638-4e8a-bc7a-2f3d73f77fd8",
+              "name": "ingress_rules",
+              "value": "  ingress {\n    protocol    \u003d \"tcp\"\n    from_port   \u003d 22\n    to_port     \u003d 22\n    security_groups \u003d [data.terraform_remote_state.vpc.outputs.${bastionSg.getAttribute(\"security_group_name\")}_id]\n  }"
+            },
+            {
+              "id": "75be56db-e3e9-4db7-b127-91884a1e4c22",
+              "name": "security_group_name",
+              "value": "packer-sg"
+            },
+            {
+              "id": "1e5ff34c-6da0-43dd-bacb-fa688a4e0c6c",
+              "name": "tags",
+              "value": "\"Name\": \"packer-sg\""
             }
           ]
         }

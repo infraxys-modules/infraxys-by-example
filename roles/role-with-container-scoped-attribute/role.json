@@ -1,16 +1,21 @@
 {
   "version": "1.0",
-  "description": "Role example",
-  "name": "role-with-container-scoped-attribute",
-  "group": "",
-  "requiredPackets": [],
+  "id": "83a80024-b177-49c6-beb0-531d9dad9c51",
   "instances": [
     {
-      "guid": "764e7b9b-675c-41e0-b0df-50bf440cda8c",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\container scoped attribute",
+      "id": "764e7b9b-675c-41e0-b0df-50bf440cda8c",
+      "packetId": "c19bd399-67f0-47a6-97e2-55a0928a3164",
+      "packetName": "Container scoped attribute",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "container_message": "This comes from the role"
+      "attributes": [
+        {
+          "id": "ccbda475-fdb2-48b3-86c0-e7823bf80108",
+          "name": "container_message",
+          "value": "This comes from the role"
+        }
+      ]
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "version": "1.0",
+  "id": "9448d341-7925-499a-a389-b356dd8aa222",
   "label": "Execute over ssh",
   "type": "",
   "autoExpand": false,
   "skipEveryInstanceFiles": false,
   "limitToAllowedChildren": false,
   "autoGenerate": false,
-  "inheritFilesFromPacketGuid": "",
   "key": "",
   "infoHtml": "",
   "attributes": [],
   "files": [
     {
-      "guid": "965b1eeb-8671-426c-af3b-82b1766d9c36",
+      "id": "965b1eeb-8671-426c-af3b-82b1766d9c36",
       "filename": "my-example.conf",
       "includeName": "",
       "menuCaption": "My configuration example",
@@ -36,7 +36,7 @@
       "customCommand": ""
     },
     {
-      "guid": "767edffc-fa69-4f6c-9cca-e54da3bd3d71",
+      "id": "767edffc-fa69-4f6c-9cca-e54da3bd3d71",
       "filename": "run-example.sh",
       "includeName": "",
       "menuCaption": "Run example",

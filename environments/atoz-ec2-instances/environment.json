@@ -1,6 +1,5 @@
 {
   "version": "1.0",
-  "name": "atoz-ec2-instances",
-  "guid": "0d04539d-50b5-4575-83dd-5d171bacf3d2",
+  "id": "0d04539d-50b5-4575-83dd-5d171bacf3d2",
   "workflows": []
 }

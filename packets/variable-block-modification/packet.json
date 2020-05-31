@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "82df6f46-f51e-4b22-95d4-5bfd8e10f8ac",
   "label": "%instance_label%",
   "type": "",
   "autoExpand": false,
@@ -10,6 +11,7 @@
   "infoHtml": "",
   "attributes": [
     {
+      "id": "4a7de916-b5b2-4762-a40b-4586c6939e84",
       "name": "instance_label",
       "caption": "Instance label",
       "type": "java.lang.String",
@@ -23,11 +25,10 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
-      "autoExport": true,
       "inputPrompt": "",
       "tooltip": "",
       "scope": "Instance",
@@ -36,7 +37,7 @@
   ],
   "files": [
     {
-      "guid": "590c0ec5-ee81-43d8-9d9a-e71a8afd85f0",
+      "id": "590c0ec5-ee81-43d8-9d9a-e71a8afd85f0",
       "filename": "run-example.sh",
       "includeName": "",
       "menuCaption": "Run blocked by file example",
@@ -60,7 +61,7 @@
       "customCommand": ""
     },
     {
-      "guid": "a254618e-1c42-46d5-868c-449ddd4c5548",
+      "id": "a254618e-1c42-46d5-868c-449ddd4c5548",
       "filename": "run-grant-example.sh",
       "includeName": "",
       "menuCaption": "Run has grant example",
@@ -84,7 +85,7 @@
       "customCommand": ""
     },
     {
-      "guid": "1eee9b6b-142d-4cdc-ba6c-4111b9b89915",
+      "id": "1eee9b6b-142d-4cdc-ba6c-4111b9b89915",
       "filename": "run-without-grant-example.sh",
       "includeName": "",
       "menuCaption": "Run hasn\u0027t got grant example",

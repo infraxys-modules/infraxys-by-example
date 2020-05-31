@@ -1,16 +1,22 @@
 {
   "version": "1.0",
-  "description": "Packet inheritance example",
-  "name": "Packet inheritance",
-  "guid": "f12faf41-dd57-4c46-b152-b297c7664854",
+  "id": "f12faf41-dd57-4c46-b152-b297c7664854",
   "roles": [],
   "instances": [
     {
-      "guid": "4f64a9e9-aa4c-423a-ae7e-3a01e93fce65",
-      "packetGuid": "github.com\\infraxys-modules\\infraxys-by-example\\master\\display message - inherited",
+      "id": "4f64a9e9-aa4c-423a-ae7e-3a01e93fce65",
+      "packetId": "4c2cf0c5-7724-4634-bf3c-9e6eaec231f3",
+      "packetName": "Display message - inherited",
+      "packetPath": "github.com\\infraxys-modules\\infraxys-by-example\\master",
       "velocityName": "",
       "instanceGroups": "",
-      "display_message": "This is displayed by an inherited action"
+      "attributes": [
+        {
+          "id": "7b4f535c-e399-4b09-b7da-6681a9063242",
+          "name": "display_message",
+          "value": "This is displayed by an inherited action"
+        }
+      ]
     }
   ]
 }
