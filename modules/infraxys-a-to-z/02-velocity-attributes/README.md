@@ -39,7 +39,7 @@ Executed the [01 - Hello World](../01-hello-world/README.md)-example.
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Attribute | instance_message | |
-| Caption | | Instance message | |
+| Caption | Instance message | |
 | Type | Text (one line) | |
 
 ### Packet - Container scoped attribute
@@ -58,7 +58,7 @@ This message-attribute will be at the container-scope.
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Attribute | container_message | |
-| Caption | | Container message | |
+| Caption | Container message | |
 | Type | Text (one line) | |
 | Scope | Container | |
 
@@ -78,7 +78,7 @@ This message-attribute will be at the environment-scope.
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Attribute | environment_message | |
-| Caption | | Environment message | |
+| Caption | Environment message | |
 | Type | Text (one line) | |
 | Form column | 2 | Place this attribute in the second column |
 | Scope | Environment | |
@@ -87,7 +87,7 @@ This message-attribute will be at the environment-scope.
 
 - Open the Modules-tab in the right Utils-slider.
 - Copy the packet "Display message" from the previous example and paste it using the context-menu of the "Packets"-item under your exercise-module.
-- Rename it from "Display message 2" to "Velocity example" and click "Save".
+- Rename it from "Display message1" to "Velocity example" and click "Save".
 
 #### display_message attribute
 
@@ -100,33 +100,22 @@ Open the display_message attribute, select 'Parse with Velocity' and save your c
 
 - Add an environment using the context-menu of the "Environments"-element under your example module. 
 - Specify "Velocity and scoped attributes" for the name and click "Save".
-- In the containers-tab, add two new containers using the context-menu:
-
-| Attribute | Value | Remark |
-| :-------- | :---- | :----- |
-| Name | Main |  |
-| Description | Main container | |
-
-| Attribute | Value | Remark |
-| :-------- | :---- | :----- |
-| Name | Environment scope example |  |
-| Description | Environment scope container | |
-
-- Click the "Instances"-tab of container "Environment scope example".
+- In the containers-tab, add two new containers called "Main" and "Environment scope example" using the "Add container" context-menu.
+- Open container "Environment scope example".
 - Drag "Environment scoped attribute"-packet from the module-tree and drop it on the root instance.
 - Specify "environment notification" for "Environment message".
 - Drag "Instance scoped attribute" onto the root instance. We'll use this to demonstrate the use of Velocity names to directly reference an instance from anywhere in the environment.
 - Specify "Instance scope notification with velocity name" for "Instance message".
-- Specify "instanceScopyVelocityName" for "Velocity name".
+- Specify "instanceScopeVelocityName" for "Velocity name".
 - Click Save and close the container.
-- Open the "Instances"-tab of the Main-container.
+- Open the "Main"-container.
 - Drop "Instance scoped attribute" on the root-instance.
 
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Instance message | Instance scoped message |  |
 
-- Drop "Velocity example"-packet on this new "Scoped attributes" instance so that it become a child of it.
+- Drop "Velocity example"-packet on this new "Scoped attributes" instance so that it becomes a child of it.
 
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
@@ -154,15 +143,25 @@ Open the display_message attribute, select 'Parse with Velocity' and save your c
 
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
-| Display message | $instanceScopyVelocityName.getAttribute("instance_message") | $instanceScopyVelocityName returns the instance with this Velocity name that we created on the "Environment scope example"-container. |
+| Display message | $instanceScopeVelocityName.getAttribute("instance_message") | $instanceScopeVelocityName returns the instance with this Velocity name that we created on the "Environment scope example"-container. |
 
 - Close all tabs
 - Drop environment "Velocity and scoped attributes" from your module onto the "Example modules"-project.
 - Right-click the environment under the project and select "Generate scripts".
 
+> If you get an error like the following:
+> ```
+> Script generation failed
+> Container:		Main
+> Instance:		Message: $instanceScopeVelocityName.getAttribute("instance_message")
+> Attribute:		display_message
+> Message:		Variable $instanceScopeVelocityName has not been set at attribute value[line 1, column 1]
+> ```
+> The this means that no instance exists in the environment with Velocity name 'instanceScopeVelocityName'. Find the instance and enter the correct Velocity to fix this. 
+
 If everything went well, 6 actions are created. 
 
-- Open the "Instances"-tab of the "Main"-container.
+- Open the "Main"-container.
 - We don't see that there's an instance underneath the "Instance scoped message". Let's first fix this.
 - Select "Open packet" from the context-menu of the "Instance scoped message"-instance.
 - Select "Auto expand", click "Save" and close this packet.
@@ -173,3 +172,7 @@ Your Main-container instance tree should now look like the following:
 
 
 You can now execute the executions for the "Velocity example"-example instances and see that the values of the referenced attributes are displayed.
+
+## Next
+
+[Multiple inheritance with packets and optional action generation](https://github.com/infraxys-modules/infraxys-by-example/blob/master/modules/infraxys-a-to-z/03-multiple-inheritance-with-packets-and-conditional-actions/README.md)

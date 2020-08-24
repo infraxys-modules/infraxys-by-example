@@ -9,7 +9,7 @@ In this example we will:
 
 ## Prerequisites
 
-Executed the [03 - Inheriting files and optional action generation](../03-inheriting-files-and-conditional-actions/README.md)-example.
+Executed the [Multiple inheritance with packets and optional action generation](../03-multiple-inheritance-with-packets-and-conditional-actions/README.md)-example.
 
 ## Steps
 

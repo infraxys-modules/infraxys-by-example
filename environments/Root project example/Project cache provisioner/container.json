@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "id": "2e3784db-82ee-4886-8e7e-2565335a69ce",
+  "roles": [],
+  "instances": [
+    {
+      "id": "f3e94ce2-2678-4662-a0be-f146fde4eedf",
+      "packetId": "d3fe7e66-ee44-4b89-a5fb-ae01bd6c8d9b",
+      "packetName": "Packer binaries",
+      "packetPath": "github.com\\infraxys-aws\\aws-packer\\master",
+      "attributes": [
+        {
+          "id": "2afd6a83-ce98-4f4e-a11d-1f7a1dfbc41e",
+          "name": "versions",
+          "value": "1.6.1\n1.5.6\n"
+        }
+      ]
+    },
+    {
+      "id": "cae84a1b-eb1b-4281-8fa5-889b882e2d07",
+      "packetId": "fb9ce487-2c6e-46cc-9308-abcb9a8c5eed",
+      "packetName": "Terraform binaries",
+      "packetPath": "github.com\\infraxys-modules\\terraform\\master",
+      "attributes": [
+        {
+          "id": "9d5fc3b1-b6bb-4a90-b134-28196faaaf48",
+          "name": "versions",
+          "value": "0.13.0\n0.12.29\n0.12.26\n0.12.25\n0.12.24\n0.12.12\n0.11.13"
+        }
+      ]
+    }
+  ]
+}

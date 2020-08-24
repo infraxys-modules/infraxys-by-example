@@ -29,7 +29,7 @@ See the [prequisites](../../../prerequisites.md)-page.
 | :-------- | :---- | :----- |
 | Name | Display message | |
 | Instance label | Message: %display_message% | Instances of this packet will have a label "Display " and then the value of the 'display_message'-attribute |
-| Info html | ```<h2>Display message</h2><p><a target="_blank" href="https://github.com/infraxys-modules/infraxys-by-example/modules/infraxys-a-to-z/01-hello-world/README.md">Open the instructions</a></p>``` | This will be displayed in the instance-screens for this packet. Be sure to specify '_blank' for the target, otherwise the current Infraxys-page will be replaced when the user presses this. |
+| Info html | ```<h2>Display message</h2><p><a target="_blank" href="https://github.com/infraxys-modules/infraxys-by-example/blob/master/modules/infraxys-a-to-z/01-hello-world/README.md">Open the instructions</a></p>``` | This will be displayed in the instance-screens for this packet. Be sure to specify '_blank' for the target, otherwise the current Infraxys-page will be replaced when the user presses this. |
 
 - Click the Save-button.
 
@@ -41,7 +41,7 @@ See the [prequisites](../../../prerequisites.md)-page.
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Attribute | display_message | |
-| Caption | | Display message | |
+| Caption | Display message | |
 | Type | Text (one line) | |
 | Required | Checked | |
 | Input prompt | <Enter a message here> | |
@@ -72,7 +72,7 @@ See the [prequisites](../../../prerequisites.md)-page.
 | Executable | Checked | |
 | Menu order | 200 | Make sure it's displayed after "Display message" in the actions menu |
 | Seperator before | Checked | Add a line before this action in the actions menu |
-| File | `show_dialog --title "My custom message" --message "$display_message"` | This will use the "<FEEDBACK>"-mechanisme to let Infraxys open a popup in the user's browser. |
+| File | `show_dialog --title "My custom message" --message "$display_message"` | This will use the "&lt;FEEDBACK&gt;"-mechanisme to let Infraxys open a popup in the user's browser. |
 
 - Click the Save-button and close the tab.
 - Close the Packet-tab.
@@ -88,11 +88,9 @@ See the [prequisites](../../../prerequisites.md)-page.
 | Attribute | Value | Remark |
 | :-------- | :---- | :----- |
 | Name | Part 1 |  |
-| Description | First part of the Infraxys "AtoZ"-example | |
 
 - Click Save.
-- Click the "Instances"-tab.
-- Drag our new packet "Display message" from the module-tree and drop it on the root instance (label "Part 1 - First ....")
+- Drag our new packet "Display message" from the module-tree and drop it on the root instance "Container: Part 1".
 - In the dialog, there's the "Open the instructions"-link which will open in a new tab when clicked.
 - Enter "Hello world" in the "Display message"-field.
 - Click Save. We've now created an instance, but not yet the actions. For this, the environment needs the be part of a project.
@@ -101,14 +99,16 @@ See the [prequisites](../../../prerequisites.md)-page.
 - Click environment "AtoZ" in the project tree to ensure the container is displayed in the bottom list.
 - Double click the container.
 - The container details will show a "Generate scripts"-button. If not, close the container and re-open it.
-- Click the "Generate scripts"-button. This will store the files on the provisioning server (which is your local pc for Infraxys Developer). For files marked executable, an actions will be created.
-- Click the "Instances"-tab.
+- Click the "Generate scripts"-button. This will parse the files and store them for later use. For files marked executable, an actions will be created.
 - Right-click on the "Message: Hello world"-instance
     - Both the actions-context menu and the bottom menu will contain the 2 actions
 - Click "Display message" in either of the menu's
     - Infraxys will start a Docker container to prepare the executions
-    - Infraxys will then start the default provisioning-container, enable all referenced modules and execute the action. See [execution-order](https://infraxys.io/topics/execution-order/) for more details.
+    - Infraxys will then start the default provisioning-container, enable all referenced modules and execute the action. See [Action bootstrapping](https://infraxys.io/topics/execution-order/) for more details.
     - Finally the message, specified in the instance, will be displayed in the console.
 - Click "Display popup"
+    - A dialog will be shown with "Hello world".
 
+## Next
 
+[Using Apache Velocity and scoped attributes](https://github.com/infraxys-modules/infraxys-by-example/blob/master/modules/infraxys-a-to-z/02-velocity-attributes/README.md)

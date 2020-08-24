@@ -1,9 +1,10 @@
-# Infraxys A to Z: 03 - Inheriting files and optional action generation
+# Infraxys A to Z: 03 - Multiple inheritance with packets and optional action generation
 
-You can inherit files from one or more other packets using the "Inherit files"-field on a packet.
+A packet can inherit files from one or more other packets using the "Extends packets"-tab in the packet-view.  
+Inheritance can go multiple levels deep and multiple packets can be extended at the same time.  
  
 In this example we will:
-- Create a new packet that has its own files + inherited files
+- Create a new packet that has its own files and attributes + inherited files and attributes
 - Explain how you can conditionally avoid the creation of an action or (part of) a file
    
 ## Prerequisites
@@ -20,9 +21,10 @@ Executed the [02 - Using Apache Velocity and scoped attributes](../02-velocity-a
 | :-------- | :---- | :----- |
 | Name | Display message - inherited | |
 | Instance label | Inherit example |  |
-| Inherit files | github.com\infraxys-modules\infraxys-by-example\master\display message | This uniquely identifies the "Display message" packet that we created earlier. You can copy this value from the other packet details view. |
 
-Hover over the "Inherit files"-label for a tooltip.
+- Save the packet and open the "Extends packets"-tab.
+- Drag and drop packet "Display message" from the module-tree onto the table under the "Extends packets"-tab.
+ 
 
 The scripts we're inheriting expect attribute "display_message" to exist. To add this, we'll copy it from the "Display message" packet:
 - Open the "Display message"-packet.

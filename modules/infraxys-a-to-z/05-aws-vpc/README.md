@@ -6,5 +6,5 @@ Please follow the instructions in [AWS VPC](/modules/environments/VPC/README.md)
 
 ## Prerequisites
 
-Executed the [Inheriting files and optional action generation](../03-inheriting-files-and-conditional-actions/README.md)-example.
+Executed the [Multiple inheritance with packets and optional action generation](../03-multiple-inheritance-with-packets-and-conditional-actions/README.md)-example.
 We'll need the VPC, so don't remove it if you want to continue with the coming examples.

@@ -14,13 +14,13 @@ See <a href="https://infraxys.io/topics/using-modules/" target="_blank">Infraxys
 
 ### Infraxys container setup
 - Create environment "examples" under the "Environments"-node of your module.
-- Create container "examples" in the containers-tab of the details view for the environment. Use description "infraxys-by-example".
+- Create container "examples" in the containers-tab of the details view for the environment.
 - In the project-tree on the left, create project "infraxys-by-example" underneath a project of your choice.
 - Drag the "examples" environment and drop it on this project. 
 
 ## Setup this infraxys-by-example module
 
-If you're not creating the packets and such in your own GitHub-repository, then you'll need configure this repository to be able to run the examples:
+If you're not creating the packets and such in your own GitHub-repository, then you'll need to configure this repository to be able to run the examples:
 
 * infraxys-by-example is normally already in your module-list. In case not:
 - Open the Modules-tab in the right slider.
