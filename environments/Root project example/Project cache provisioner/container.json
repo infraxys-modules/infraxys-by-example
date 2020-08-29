@@ -7,7 +7,9 @@
       "id": "f3e94ce2-2678-4662-a0be-f146fde4eedf",
       "packetId": "d3fe7e66-ee44-4b89-a5fb-ae01bd6c8d9b",
       "packetName": "Packer binaries",
-      "packetPath": "github.com\\infraxys-aws\\aws-packer\\master",
+      "packetPath": "github.com\\infraxys-modules\\packer\\master",
+      "velocityName": "",
+      "instanceGroups": "",
       "attributes": [
         {
           "id": "2afd6a83-ce98-4f4e-a11d-1f7a1dfbc41e",
@@ -21,6 +23,8 @@
       "packetId": "fb9ce487-2c6e-46cc-9308-abcb9a8c5eed",
       "packetName": "Terraform binaries",
       "packetPath": "github.com\\infraxys-modules\\terraform\\master",
+      "velocityName": "",
+      "instanceGroups": "",
       "attributes": [
         {
           "id": "9d5fc3b1-b6bb-4a90-b134-28196faaaf48",
