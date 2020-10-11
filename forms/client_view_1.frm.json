@@ -1,0 +1,63 @@
+{
+  "form": {
+    "version": "2.0",
+    "id": "oneGitHubAccountOverviewForm",
+    "header": "OneFirmGitHub Graphs",
+    "okCaption": "Close",
+    "showCancel": false,
+    "canvas": {
+      "columns": [
+        {
+          "fixedHeight": true,
+          "expandRatio": 1,
+          "components": [
+            {
+              "id": "graphForm",
+              "class": "ReactModuleApp",
+              "source": {
+                "cacheDirectory": "client-files",
+                "filename": "graphs.html"
+              }
+            }
+          ]
+        },
+        {
+          "fixedHeight": true,
+          "expandRatio": 1,
+          "components": [
+            {
+              "id": "graphSourceEmbed",
+              "class": "ReactModuleApp",
+              "expandRatio": 1,
+              "source": {
+                "cacheDirectory": "client-files",
+                "filename": "graphSourceRef.html"
+              }
+            },
+            {
+              "id": "jsReactForm",
+              "class": "ReactModuleApp",
+              "height": "30px",
+              "javascript": {
+                "cacheDirectory": "client-files",
+                "filename": "reactPureJavaScriptExample.js",
+                "onload": "react_code_onload"
+              }
+            },
+            {
+              "id": "jsxReactForm",
+              "class": "ReactModuleApp",
+              "height": "30px",
+              "javascript": {
+                "cacheDirectory": "client-files",
+                "filename": "reactJsxExample.js",
+                "type": "text/babel",
+                "onload": "react_code_onload_jsx"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
